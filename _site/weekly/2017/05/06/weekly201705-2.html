@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title></title>
+	<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Multiagent Bidirectionally-Coordinated Nets for Learning to Play StarCraft Combat Games</title>
+<meta property="og:title" content="Multiagent Bidirectionally-Coordinated Nets for Learning to Play StarCraft Combat Games" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Artificial Intelligence (cs.AI); Learning (cs.LG)" />
+<meta property="og:description" content="Artificial Intelligence (cs.AI); Learning (cs.LG)" />
+<link rel="canonical" href="http://localhost:4000/weekly/2017/05/06/weekly201705-2.html" />
+<meta property="og:url" content="http://localhost:4000/weekly/2017/05/06/weekly201705-2.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-05-06T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"name":null,"description":"Artificial Intelligence (cs.AI); Learning (cs.LG)","author":null,"@type":"BlogPosting","url":"http://localhost:4000/weekly/2017/05/06/weekly201705-2.html","publisher":null,"image":null,"headline":"Multiagent Bidirectionally-Coordinated Nets for Learning to Play StarCraft Combat Games","dateModified":"2017-05-06T00:00:00+08:00","datePublished":"2017-05-06T00:00:00+08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/weekly/2017/05/06/weekly201705-2.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+	<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="http://localhost:4000/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://localhost:4000/assets/css/ie8.css" /><![endif]-->
+  
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="http://localhost:4000" class="logo"><strong>Learning Group supported by Yanghe Feng</strong> <span></span></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</header>
+
+
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		        <li><a href="/" class="button special fit">Home</a></li>
+	    	
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+        
+            <li><a href="/paper/" class="button fit">Lastest Studies</a></li>
+        
+            <li><a href="/weekly/" class="button fit">Awesome Papers Weekly</a></li>
+        
+            <li><a href="/study/" class="button fit">Intensive Studies</a></li>
+        
+        
+			
+        
+			
+				<ul class="actions vertical">
+				<li><a href="/cv.html" class="button fit">About us</a></li>
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+
+	    
+<!--
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>
+-->
+</nav> 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>Multiagent Bidirectionally-Coordinated Nets for Learning to Play StarCraft Combat Games</h1>
+		</header>
+		
+		<p><h3 id="multiagent-bidirectionally-coordinated-nets-for-learning-to-play-starcraft-combat-games">Multiagent Bidirectionally-Coordinated Nets for Learning to Play StarCraft Combat Games</h3>
+
+<blockquote>
+  <p>Peng Peng (1), Quan Yuan (1), Ying Wen (2), Yaodong Yang (2), Zhenkun Tang (1), Haitao Long (1), Jun Wang (2)</p>
+
+  <p>(1) Alibaba Group, (2) University College London</p>
+
+  <p>(arXiv:1703.10069, Submitted on 29 Mar 2017)</p>
+</blockquote>
+
+<p>Real-world artificial intelligence (AI) applications often require multiple agents to work in a collaborative effort<!--excerpt-->. Efficient learning for intra-agent communication and coordination is an indispensable step towards general AI. In this paper, we take StarCraft combat game as the test scenario, where the task is to coordinate multiple agents as a team to defeat their enemies. To maintain a scalable yet effective communication protocol, we introduce a multiagent bidirectionally-coordinated network (BiCNet [‘bIknet]) with a vectorised extension of actor-critic formulation. We show that BiCNet can handle different types of combats under diverse terrains with arbitrary numbers of AI agents for both sides. Our analysis demonstrates that without any supervisions such as human demonstrations or labelled data, BiCNet could learn various types of coordination strategies that is similar to these of experienced game players. Moreover, BiCNet is easily adaptable to the tasks with heterogeneous agents. In our experiments, we evaluate our approach against multiple baselines under different scenarios; it shows state-of-the-art performance, and possesses potential values for large-scale real-world applications.</p>
+
+<h3 id="用于学习玩星际争霸战的多重双向协调网">用于学习玩星际争霸战的多重双向协调网</h3>
+
+<p>现实世界人工智能（AI）应用程序通常需要多个代理人协同工作。代理人之间的沟通和协调的有效学习是向一般人工智能迈进的不可或缺的一步。在本文中，我们以星际争霸战作为测试场景，其任务是协调多个代理人作为一个团队来打败他们的敌人。为了保持可扩展但有效的通信协议，我们引入了一个多代理双向协调网络（BiCNet[‘bIknet]），其具有向量化的演员评论者的扩展。我们可以看出，BiCNet可以处理不同地形下的不同类型的战斗，双方都有任意数量的AI代理。我们的分析表明，如果没有任何诸如人类示范或标签数据的监管，BiCNet可以学习与经验丰富的游戏玩家相似的各种类型的协调策略。此外，BiCNet很容易适应异构代理的任务。在我们的实验中，我们根据不同的场景评估我们针对多个基线的方法;它展示了最先进的性能，并且具有大规模现实世界应用的潜在价值。</p>
+
+<hr />
+
+<h3 id="acknowledgments">Acknowledgments</h3>
+
+<p>冯炀赫</p>
+</p>
+	</div>
+</section>
+
+</div>
+
+    <!-- Contact -->
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form action="https://formspree.io/fengyanghe@gmail.com" method="POST">
+				<div class="field half first">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field half">
+					<label for="email">Email</label>
+					<input type="text" name="_replyto" id="email" />
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="special" /></li>
+					<li><input type="reset" value="Clear" /></li>
+				</ul>
+			</form>
+		</section>
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3>Email</h3>
+					<a href="#">fengyanghe@gmail.com</a>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-phone"></span>
+					<h3>Phone</h3>
+					<span>07318457661</span>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-home"></span>
+					<h3>Address</h3>
+					<span>National University of Defense Tecnology<br />
+					Changsha, Hunan 410073<br />
+					China</span>
+				</div>
+			</section>
+		</section>
+	</div>
+</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a href="https://www.github.com/fengyanghe" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a>
+				
+				
+				
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Learning Group supported by Yanghe Feng </li>
+				<li>Design: <a href="https://fengyanghe.github.io" target="_blank">Yanghe Feng</a></li>
+				<li>Jekyll integration: <a href="https://fengyanghe.github.io" target="_blank">Yanghe Feng</a></li>
+				
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="http://localhost:4000/assets/js/jquery.min.js"></script>
+	<script src="http://localhost:4000/assets/js/jquery.scrolly.min.js"></script>
+	<script src="http://localhost:4000/assets/js/jquery.scrollex.min.js"></script>
+	<script src="http://localhost:4000/assets/js/skel.min.js"></script>
+	<script src="http://localhost:4000/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="http://localhost:4000/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

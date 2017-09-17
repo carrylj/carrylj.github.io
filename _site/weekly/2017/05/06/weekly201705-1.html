@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title></title>
+	<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>node2vec: Scalable Feature Learning for Networks</title>
+<meta property="og:title" content="node2vec: Scalable Feature Learning for Networks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="网络表示学习" />
+<meta property="og:description" content="网络表示学习" />
+<link rel="canonical" href="http://localhost:4000/weekly/2017/05/06/weekly201705-1.html" />
+<meta property="og:url" content="http://localhost:4000/weekly/2017/05/06/weekly201705-1.html" />
+<meta property="og:image" content="http://localhost:4000/assets/images/weekly201705-2.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-05-06T00:00:00+08:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"name":null,"description":"网络表示学习","author":null,"@type":"BlogPosting","url":"http://localhost:4000/weekly/2017/05/06/weekly201705-1.html","publisher":null,"image":"http://localhost:4000/assets/images/weekly201705-2.jpg","headline":"node2vec: Scalable Feature Learning for Networks","dateModified":"2017-05-06T00:00:00+08:00","datePublished":"2017-05-06T00:00:00+08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/weekly/2017/05/06/weekly201705-1.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+	<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="http://localhost:4000/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://localhost:4000/assets/css/ie8.css" /><![endif]-->
+  
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="http://localhost:4000" class="logo"><strong>Learning Group supported by Yanghe Feng</strong> <span></span></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</header>
+
+
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		        <li><a href="/" class="button special fit">Home</a></li>
+	    	
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+        
+            <li><a href="/paper/" class="button fit">Lastest Studies</a></li>
+        
+            <li><a href="/weekly/" class="button fit">Awesome Papers Weekly</a></li>
+        
+            <li><a href="/study/" class="button fit">Intensive Studies</a></li>
+        
+        
+			
+        
+			
+				<ul class="actions vertical">
+				<li><a href="/cv.html" class="button fit">About us</a></li>
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+
+	    
+<!--
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>
+-->
+</nav> 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>node2vec: Scalable Feature Learning for Networks</h1>
+		</header>
+		<span class="image main"><img src="/assets/images/weekly201705-2.jpg" alt="" /></span>
+		<p><h3 id="node2vec-scalable-feature-learning-for-networks">node2vec: Scalable Feature Learning for Networks</h3>
+
+<blockquote>
+  <p>Aditya Grover， Jure Leskovec</p>
+
+  <p>Stanford University</p>
+
+  <p>adityag@cs.stanford.edu，jure@cs.stanford.edu</p>
+
+  <p>KDD ’16, August 13 - 17, 2016, San Francisco, CA, USA</p>
+</blockquote>
+
+<p>Prediction tasks over nodes and edges in networks require careful effort in engineering features used by learning algorithms.<!--excerpt--> Recent research in the broader field of representation learning has led to significant progress in automating prediction by learning the features themselves. However, present feature learning approaches are not expressive enough to capture the diversity of connectivity patterns observed in networks.</p>
+
+<p>Here we propose node2vec, an algorithmic framework for learning continuous feature representations for nodes in networks. In node2vec, we learn a mapping of nodes to a low-dimensional space of features that maximizes the likelihood of preserving network neighborhoods of nodes. We define a flexible notion of a node’s network neighborhood and design a biased random walk procedure, which efficiently explores diverse neighborhoods. Our algorithm generalizes prior work which is based on rigid notions of network neighborhoods, and we argue that the added flexibility in exploring neighborhoods is the key to learning richer representations.</p>
+
+<p>We demonstrate the efficacy of node2vec over existing state-ofthe-art techniques on multi-label classification and link prediction in several real-world networks from diverse domains. Taken together, our work represents a new way for efficiently learning stateof-the-art task-independent representations in complex networks.</p>
+
+<h3 id="node2vec网络的可扩展性特征学习">node2vec：网络的可扩展性特征学习</h3>
+
+<p>在网络中的节点和边缘上的预测任务需要在学习算法使用的工程特征方面进行谨慎的努力。 最近在更广泛的代表学习领域的研究已经通过学习特征本身在自动化预测方面取得了重大进展。 然而，目前的特征学习方法不足以捕捉网络中观察到的连接模式的多样性。</p>
+
+<p>这里我们提出了node2vec，一种用于学习网络节点连续特征表征的算法框架。 在node2vec中，我们学习了将节点映射到特征的低维空间，使维护节点网络邻域的可能性最大化。 我们定义了一个节点网络邻域的灵活概念，并设计了一个有偏见的随机游走过程，可以有效地探索不同的社区。 我们的算法概括了基于网络邻域的刚性概念的先前工作，我们认为，探索邻域的灵活性增加是学习更丰富的表示的关键。</p>
+
+<p>我们展示了node2vec与现有技术的多标签分类和链接预测在多个现实世界网络中的不同领域的功效。 综合起来，我们的工作代表了一种有效学习复杂网络中最先进的任务独立表示的新方法。</p>
+
+<p><img src="assets/images/weekly201705-1.jpg" alt="" />
+<img src="assets/images/weekly201705-3.jpg" alt="" />
+<img src="assets/images/weekly201705-4.jpg" alt="" />
+—</p>
+
+<h3 id="acknowledgments">Acknowledgments</h3>
+
+<p>范长俊</p>
+</p>
+	</div>
+</section>
+
+</div>
+
+    <!-- Contact -->
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form action="https://formspree.io/fengyanghe@gmail.com" method="POST">
+				<div class="field half first">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field half">
+					<label for="email">Email</label>
+					<input type="text" name="_replyto" id="email" />
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="special" /></li>
+					<li><input type="reset" value="Clear" /></li>
+				</ul>
+			</form>
+		</section>
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3>Email</h3>
+					<a href="#">fengyanghe@gmail.com</a>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-phone"></span>
+					<h3>Phone</h3>
+					<span>07318457661</span>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-home"></span>
+					<h3>Address</h3>
+					<span>National University of Defense Tecnology<br />
+					Changsha, Hunan 410073<br />
+					China</span>
+				</div>
+			</section>
+		</section>
+	</div>
+</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a href="https://www.github.com/fengyanghe" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a>
+				
+				
+				
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Learning Group supported by Yanghe Feng </li>
+				<li>Design: <a href="https://fengyanghe.github.io" target="_blank">Yanghe Feng</a></li>
+				<li>Jekyll integration: <a href="https://fengyanghe.github.io" target="_blank">Yanghe Feng</a></li>
+				
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="http://localhost:4000/assets/js/jquery.min.js"></script>
+	<script src="http://localhost:4000/assets/js/jquery.scrolly.min.js"></script>
+	<script src="http://localhost:4000/assets/js/jquery.scrollex.min.js"></script>
+	<script src="http://localhost:4000/assets/js/skel.min.js"></script>
+	<script src="http://localhost:4000/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="http://localhost:4000/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

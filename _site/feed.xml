@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-17T08:55:57+08:00</updated><id>http://localhost:4000/</id><subtitle>Learning Group with Information System and Engineering Lab in National University of Defense Technology, Changsha, 410073, P.R.China</subtitle><entry><title type="html">Multiagent Bidirectionally-Coordinated Nets for Learning to Play StarCraft Combat Games</title><link href="http://localhost:4000/weekly/2017/05/06/weekly201705-2.html" rel="alternate" type="text/html" title="Multiagent Bidirectionally-Coordinated Nets for Learning to Play StarCraft Combat Games" /><published>2017-05-06T00:00:00+08:00</published><updated>2017-05-06T00:00:00+08:00</updated><id>http://localhost:4000/weekly/2017/05/06/weekly201705-2</id><content type="html" xml:base="http://localhost:4000/weekly/2017/05/06/weekly201705-2.html">&lt;h3 id=&quot;multiagent-bidirectionally-coordinated-nets-for-learning-to-play-starcraft-combat-games&quot;&gt;Multiagent Bidirectionally-Coordinated Nets for Learning to Play StarCraft Combat Games&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Peng Peng (1), Quan Yuan (1), Ying Wen (2), Yaodong Yang (2), Zhenkun Tang (1), Haitao Long (1), Jun Wang (2)&lt;/p&gt;
+
+  &lt;p&gt;(1) Alibaba Group, (2) University College London&lt;/p&gt;
+
+  &lt;p&gt;(arXiv:1703.10069, Submitted on 29 Mar 2017)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Real-world artificial intelligence (AI) applications often require multiple agents to work in a collaborative effort&lt;!--excerpt--&gt;. Efficient learning for intra-agent communication and coordination is an indispensable step towards general AI. In this paper, we take StarCraft combat game as the test scenario, where the task is to coordinate multiple agents as a team to defeat their enemies. To maintain a scalable yet effective communication protocol, we introduce a multiagent bidirectionally-coordinated network (BiCNet [‘bIknet]) with a vectorised extension of actor-critic formulation. We show that BiCNet can handle different types of combats under diverse terrains with arbitrary numbers of AI agents for both sides. Our analysis demonstrates that without any supervisions such as human demonstrations or labelled data, BiCNet could learn various types of coordination strategies that is similar to these of experienced game players. Moreover, BiCNet is easily adaptable to the tasks with heterogeneous agents. In our experiments, we evaluate our approach against multiple baselines under different scenarios; it shows state-of-the-art performance, and possesses potential values for large-scale real-world applications.&lt;/p&gt;
+
+&lt;h3 id=&quot;用于学习玩星际争霸战的多重双向协调网&quot;&gt;用于学习玩星际争霸战的多重双向协调网&lt;/h3&gt;
+
+&lt;p&gt;现实世界人工智能（AI）应用程序通常需要多个代理人协同工作。代理人之间的沟通和协调的有效学习是向一般人工智能迈进的不可或缺的一步。在本文中，我们以星际争霸战作为测试场景，其任务是协调多个代理人作为一个团队来打败他们的敌人。为了保持可扩展但有效的通信协议，我们引入了一个多代理双向协调网络（BiCNet[‘bIknet]），其具有向量化的演员评论者的扩展。我们可以看出，BiCNet可以处理不同地形下的不同类型的战斗，双方都有任意数量的AI代理。我们的分析表明，如果没有任何诸如人类示范或标签数据的监管，BiCNet可以学习与经验丰富的游戏玩家相似的各种类型的协调策略。此外，BiCNet很容易适应异构代理的任务。在我们的实验中，我们根据不同的场景评估我们针对多个基线的方法;它展示了最先进的性能，并且具有大规模现实世界应用的潜在价值。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;acknowledgments&quot;&gt;Acknowledgments&lt;/h3&gt;
+
+&lt;p&gt;冯炀赫&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><category term="“Reinforcement" /><category term="Learning”" /><summary type="html">Multiagent Bidirectionally-Coordinated Nets for Learning to Play StarCraft Combat Games Peng Peng (1), Quan Yuan (1), Ying Wen (2), Yaodong Yang (2), Zhenkun Tang (1), Haitao Long (1), Jun Wang (2) (1) Alibaba Group, (2) University College London (arXiv:1703.10069, Submitted on 29 Mar 2017) Real-world artificial intelligence (AI) applications often require multiple agents to work in a collaborative effort</summary></entry><entry><title type="html">node2vec: Scalable Feature Learning for Networks</title><link href="http://localhost:4000/weekly/2017/05/06/weekly201705-1.html" rel="alternate" type="text/html" title="node2vec: Scalable Feature Learning for Networks" /><published>2017-05-06T00:00:00+08:00</published><updated>2017-05-06T00:00:00+08:00</updated><id>http://localhost:4000/weekly/2017/05/06/weekly201705-1</id><content type="html" xml:base="http://localhost:4000/weekly/2017/05/06/weekly201705-1.html">&lt;h3 id=&quot;node2vec-scalable-feature-learning-for-networks&quot;&gt;node2vec: Scalable Feature Learning for Networks&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Aditya Grover， Jure Leskovec&lt;/p&gt;
+
+  &lt;p&gt;Stanford University&lt;/p&gt;
+
+  &lt;p&gt;adityag@cs.stanford.edu，jure@cs.stanford.edu&lt;/p&gt;
+
+  &lt;p&gt;KDD ’16, August 13 - 17, 2016, San Francisco, CA, USA&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Prediction tasks over nodes and edges in networks require careful effort in engineering features used by learning algorithms.&lt;!--excerpt--&gt; Recent research in the broader field of representation learning has led to significant progress in automating prediction by learning the features themselves. However, present feature learning approaches are not expressive enough to capture the diversity of connectivity patterns observed in networks.&lt;/p&gt;
+
+&lt;p&gt;Here we propose node2vec, an algorithmic framework for learning continuous feature representations for nodes in networks. In node2vec, we learn a mapping of nodes to a low-dimensional space of features that maximizes the likelihood of preserving network neighborhoods of nodes. We define a flexible notion of a node’s network neighborhood and design a biased random walk procedure, which efficiently explores diverse neighborhoods. Our algorithm generalizes prior work which is based on rigid notions of network neighborhoods, and we argue that the added flexibility in exploring neighborhoods is the key to learning richer representations.&lt;/p&gt;
+
+&lt;p&gt;We demonstrate the efficacy of node2vec over existing state-ofthe-art techniques on multi-label classification and link prediction in several real-world networks from diverse domains. Taken together, our work represents a new way for efficiently learning stateof-the-art task-independent representations in complex networks.&lt;/p&gt;
+
+&lt;h3 id=&quot;node2vec网络的可扩展性特征学习&quot;&gt;node2vec：网络的可扩展性特征学习&lt;/h3&gt;
+
+&lt;p&gt;在网络中的节点和边缘上的预测任务需要在学习算法使用的工程特征方面进行谨慎的努力。 最近在更广泛的代表学习领域的研究已经通过学习特征本身在自动化预测方面取得了重大进展。 然而，目前的特征学习方法不足以捕捉网络中观察到的连接模式的多样性。&lt;/p&gt;
+
+&lt;p&gt;这里我们提出了node2vec，一种用于学习网络节点连续特征表征的算法框架。 在node2vec中，我们学习了将节点映射到特征的低维空间，使维护节点网络邻域的可能性最大化。 我们定义了一个节点网络邻域的灵活概念，并设计了一个有偏见的随机游走过程，可以有效地探索不同的社区。 我们的算法概括了基于网络邻域的刚性概念的先前工作，我们认为，探索邻域的灵活性增加是学习更丰富的表示的关键。&lt;/p&gt;
+
+&lt;p&gt;我们展示了node2vec与现有技术的多标签分类和链接预测在多个现实世界网络中的不同领域的功效。 综合起来，我们的工作代表了一种有效学习复杂网络中最先进的任务独立表示的新方法。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/weekly201705-1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/weekly201705-3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/weekly201705-4.jpg&quot; alt=&quot;&quot; /&gt;
+—&lt;/p&gt;
+
+&lt;h3 id=&quot;acknowledgments&quot;&gt;Acknowledgments&lt;/h3&gt;
+
+&lt;p&gt;范长俊&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><category term="“Graph" /><category term="Mining”" /><summary type="html">node2vec: Scalable Feature Learning for Networks Aditya Grover， Jure Leskovec Stanford University adityag@cs.stanford.edu，jure@cs.stanford.edu KDD ’16, August 13 - 17, 2016, San Francisco, CA, USA Prediction tasks over nodes and edges in networks require careful effort in engineering features used by learning algorithms.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/weekly201705-2.jpg" /></entry><entry><title type="html">Awesome Papers: 2017-02-4</title><link href="http://localhost:4000/weekly/2017/02/20/weekly201702-5.html" rel="alternate" type="text/html" title="Awesome Papers: 2017-02-4" /><published>2017-02-20T00:00:00+08:00</published><updated>2017-02-20T00:00:00+08:00</updated><id>http://localhost:4000/weekly/2017/02/20/weekly201702-5</id><content type="html" xml:base="http://localhost:4000/weekly/2017/02/20/weekly201702-5.html">&lt;h3 id=&quot;actor-mimic-deep-multitask-and-transfer-reinforcement-learning&quot;&gt;ACTOR-MIMIC: DEEP MULTITASK AND TRANSFER REINFORCEMENT LEARNING&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Emilio Parisotto, Jimmy Ba, Ruslan Salakhutdinov&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The ability to act in multiple environments and transfer previous knowledge to new &lt;!--excerpt--&gt;situations can be considered a critical aspect of any intelligent agent. Towards this goal, we define a novel method of multitask and transfer learning that enables an autonomous agent to learn how to behave in multiple tasks simultaneously, and then generalize its knowledge to new domains. This method, termed “Actor-Mimic”, exploits the use of deep reinforcement learning and model compression techniques to train a single policy network that learns how to act in a set of distinct tasks by using the guidance of several expert teachers. We then show that the representations learnt by the deep policy network are capable of generalizing to new tasks with no prior expert guidance, speeding up learning in novel environments. Although our method can in general be applied to a wide range of problems, we use Atari games as a testing environment to demonstrate these methods.&lt;/p&gt;
+
+&lt;h3 id=&quot;actor-mimic深度多任务和转移强化学习&quot;&gt;ACTOR-MIMIC:深度多任务和转移强化学习&lt;/h3&gt;
+
+&lt;p&gt;能够在多个环境和先前的知识转移到新的情况可以被认为是任何智能代理的一个关键方面。朝着这一目标，我们定义了一个多任务和转移学习的新方法，使一个自主代理学习如何在多个任务中同时进行，然后概括形成新领域的知识。这种方法，称为“Actor-Mimic”，是利用强化学习和模型压缩技术训练一个策略网络，学习如何通过使用多个expert teachers在一组不同的任务中进行。然后我们展示了深度策略网络能够概括知识到新任务在之前没有expert guidance的情况下，加快了在新环境中学习。虽然我们的方法可以应用于广泛的一般问题，我们使用Atari游戏作为一个测试环境来演示这些方法。&lt;/p&gt;
+
+&lt;p&gt;在本文中，作者定义一个新的方法：Actor-Mimic，用于通过一组相关的任务来源来训练一个深度策略网络。文中表明，使用Actor-Mimic进行网络训练能够使许多游戏得分在性能上同时达到专家水平，虽然只拥有一个相同的复杂模型。此外，使用Actor-Mimic作为多任务预训练阶段可以显著提高一组目标任务的学习速度。这表明特征学习在源任务上可以概括为新目标任务，只要在源和目标任务之间给予足够的相似度。未来工作的方向是开发一个方法，可以使目标知识转移通过从识别给定目标任务的相关源任务实现源任务转移。使用有针对性的知识转移可以在我们的实验观察到的负迁移的情况下提供潜在帮助。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;download&quot;&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1mhNCYq0&quot;&gt;链接到百度云盘&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;acknowledgments&quot;&gt;Acknowledgments&lt;/h3&gt;
+
+&lt;p&gt;王琦&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">ACTOR-MIMIC: DEEP MULTITASK AND TRANSFER REINFORCEMENT LEARNING Emilio Parisotto, Jimmy Ba, Ruslan Salakhutdinov The ability to act in multiple environments and transfer previous knowledge to new</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/weekly201702-4.png" /></entry><entry><title type="html">Awesome Papers: 2017-02-4</title><link href="http://localhost:4000/weekly/2017/02/20/weekly201702-4.html" rel="alternate" type="text/html" title="Awesome Papers: 2017-02-4" /><published>2017-02-20T00:00:00+08:00</published><updated>2017-02-20T00:00:00+08:00</updated><id>http://localhost:4000/weekly/2017/02/20/weekly201702-4</id><content type="html" xml:base="http://localhost:4000/weekly/2017/02/20/weekly201702-4.html">&lt;h3 id=&quot;actor-mimic-deep-multitask-and-transfer-reinforcement-learning&quot;&gt;ACTOR-MIMIC: DEEP MULTITASK AND TRANSFER REINFORCEMENT LEARNING&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Emilio Parisotto, Jimmy Ba, Ruslan Salakhutdinov&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The ability to act in multiple environments and transfer previous knowledge to new &lt;!--excerpt--&gt;situations can be considered a critical aspect of any intelligent agent. Towards this goal, we define a novel method of multitask and transfer learning that enables an autonomous agent to learn how to behave in multiple tasks simultaneously, and then generalize its knowledge to new domains. This method, termed “Actor-Mimic”, exploits the use of deep reinforcement learning and model compression techniques to train a single policy network that learns how to act in a set of distinct tasks by using the guidance of several expert teachers. We then show that the representations learnt by the deep policy network are capable of generalizing to new tasks with no prior expert guidance, speeding up learning in novel environments. Although our method can in general be applied to a wide range of problems, we use Atari games as a testing environment to demonstrate these methods.&lt;/p&gt;
+
+&lt;h3 id=&quot;actor-mimic深度多任务和转移强化学习&quot;&gt;ACTOR-MIMIC:深度多任务和转移强化学习&lt;/h3&gt;
+
+&lt;p&gt;能够在多个环境和先前的知识转移到新的情况可以被认为是任何智能代理的一个关键方面。朝着这一目标，我们定义了一个多任务和转移学习的新方法，使一个自主代理学习如何在多个任务中同时进行，然后概括形成新领域的知识。这种方法，称为“Actor-Mimic”，是利用强化学习和模型压缩技术训练一个策略网络，学习如何通过使用多个expert teachers在一组不同的任务中进行。然后我们展示了深度策略网络能够概括知识到新任务在之前没有expert guidance的情况下，加快了在新环境中学习。虽然我们的方法可以应用于广泛的一般问题，我们使用Atari游戏作为一个测试环境来演示这些方法。&lt;/p&gt;
+
+&lt;p&gt;在本文中，作者定义一个新的方法：Actor-Mimic，用于通过一组相关的任务来源来训练一个深度策略网络。文中表明，使用Actor-Mimic进行网络训练能够使许多游戏得分在性能上同时达到专家水平，虽然只拥有一个相同的复杂模型。此外，使用Actor-Mimic作为多任务预训练阶段可以显著提高一组目标任务的学习速度。这表明特征学习在源任务上可以概括为新目标任务，只要在源和目标任务之间给予足够的相似度。未来工作的方向是开发一个方法，可以使目标知识转移通过从识别给定目标任务的相关源任务实现源任务转移。使用有针对性的知识转移可以在我们的实验观察到的负迁移的情况下提供潜在帮助。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;download&quot;&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1mhNCYq0&quot;&gt;链接到百度云盘&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;acknowledgments&quot;&gt;Acknowledgments&lt;/h3&gt;
+
+&lt;p&gt;王琦&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">ACTOR-MIMIC: DEEP MULTITASK AND TRANSFER REINFORCEMENT LEARNING Emilio Parisotto, Jimmy Ba, Ruslan Salakhutdinov The ability to act in multiple environments and transfer previous knowledge to new</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/weekly201702-4.png" /></entry><entry><title type="html">Awesome Papers: 2017-02-1</title><link href="http://localhost:4000/weekly/2017/02/06/weekly201702-1.html" rel="alternate" type="text/html" title="Awesome Papers: 2017-02-1" /><published>2017-02-06T00:00:00+08:00</published><updated>2017-02-06T00:00:00+08:00</updated><id>http://localhost:4000/weekly/2017/02/06/weekly201702-1</id><content type="html" xml:base="http://localhost:4000/weekly/2017/02/06/weekly201702-1.html">&lt;h3 id=&quot;on-the-construction-of-extreme-learning-machine-for-online-and-offline-one-class-classification---an-expanded-toolbox&quot;&gt;On The Construction of Extreme Learning Machine for Online and Offline One-Class Classification - An Expanded Toolbox&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Chandan Gautam, Aruna Tiwari and Qian Leng&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;one-class-classification-occ-has-been-prime-concern-for-researchers-and-effectively-employed-in-various-disciplines--but-traditional-methods-based-one-class-classifiers-are-very-time-consuming-due-to-its-iterative-process-and-various-parameters-tuning-in-this-paper-we-present-six-occ-methods-based-on-extreme-learning-machine-elm-and-online-sequential-elm-oselm-our-proposed-classifiers-mainly-lie-in-two-categories-reconstruction-based-and-boundary-based-which-supports-both-types-of-learning-viz-online-and-offline-learning-out-of-various-proposed-methods-four-are-offline-and-remaining-two-are-online-methods-out-of-four-offline-methods-two-methods-perform-random-feature-mapping-and-two-methods-perform-kernel-feature-mapping-kernel-feature-mapping-based-approaches-have-been-tested-with-rbf-kernel-and-online-version-of-one-class-classifiers-are-tested-with-both-types-of-nodes-viz-additive-and-rbf-it-is-well-known-fact-that-threshold-decision-is-a-crucial-factor-in-case-of-occ-so-three-different-threshold-deciding-criteria-have-been-employed-so-far-and-analyses-the-effectiveness-of-one-threshold-deciding-criteria-over-another-further-these-methods-are-tested-on-two-artificial-datasets-to-check-there-boundary-construction-capability-and-on-eight-benchmark-datasets-from-different-discipline-to-evaluate-the-performance-of-the-classifiers-our-proposed-classifiers-exhibit-better-performance-compared-to-ten-traditional-one-class-classifiers-and-elm-based-two-one-class-classifiers-through-proposed-one-class-classifiers-we-intend-to-expand-the-functionality-of-the-most-used-toolbox-for-occ-ie-dd-toolbox-all-of-our-methods-are-totally-compatible-with-all-the-present-features-of-the-toolbox&quot;&gt;One-Class Classification (OCC) has been prime concern for researchers and effectively employed in various disciplines. &lt;!--excerpt--&gt; But, traditional methods based one-class classifiers are very time consuming due to its iterative process and various parameters tuning. In this paper, we present six OCC methods based on extreme learning machine (ELM) and Online Sequential ELM (OSELM). Our proposed classifiers mainly lie in two categories: reconstruction based and boundary based, which supports both types of learning viz., online and offline learning. Out of various proposed methods, four are offline and remaining two are online methods. Out of four offline methods, two methods perform random feature mapping and two methods perform kernel feature mapping. Kernel feature mapping based approaches have been tested with RBF kernel and online version of one-class classifiers are tested with both types of nodes viz., additive and RBF. It is well known fact that threshold decision is a crucial factor in case of OCC, so, three different threshold deciding criteria have been employed so far and analyses the effectiveness of one threshold deciding criteria over another. Further, these methods are tested on two artificial datasets to check there boundary construction capability and on eight benchmark datasets from different discipline to evaluate the performance of the classifiers. Our proposed classifiers exhibit better performance compared to ten traditional one-class classifiers and ELM based two one-class classifiers. Through proposed one-class classifiers, we intend to expand the functionality of the most used toolbox for OCC i.e. DD toolbox. All of our methods are totally compatible with all the present features of the toolbox.&lt;/h2&gt;
+
+&lt;h3 id=&quot;adversarial-variational-bayes-unifying-variational-autoencoders-and-generative-adversarial-networks&quot;&gt;Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Lars Mescheder, Sebastian Nowozin and Andreas Geiger&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Variational Autoencoders (VAEs) are expressive latent variable models that 
+can be used to learn complex probability distributions from training data. 
+However, the quality of the resulting model crucially relies on the 
+expressiveness of the inference model used during training. We introduce 
+Adversarial Variational Bayes (AVB), a technique for training Variational 
+Autoencoders with arbitrarily expressive inference models. We achieve this by 
+introducing an auxiliary discriminative network that allows to rephrase the 
+maximum-likelihood-problem as a two-player game, hence establishing a 
+principled connection between VAEs and Generative Adversarial Networks (GANs). 
+We show that in the nonparametric limit our method yields an exact 
+maximum-likelihood assignment for the parameters of the generative model, as 
+well as the exact posterior distribution over the latent variables given an 
+observation. Contrary to competing approaches which combine VAEs with GANs, our 
+approach has a clear theoretical justification, retains most advantages of 
+standard Variational Autoencoders and is easy to implement.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;agent-agnostic-human-in-the-loop-reinforcement-learning&quot;&gt;Agent-Agnostic Human-in-the-Loop Reinforcement Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;David Abel, John Salvatier, Andreas Stuhlm&quot;uller, Owain Evans&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Providing Reinforcement Learning agents with expert advice can dramatically 
+improve various aspects of learning. Prior work has developed teaching 
+protocols that enable agents to learn efficiently in complex environments; many 
+of these methods tailor the teacher’s guidance to agents with a particular 
+representation or underlying learning scheme, offering effective but 
+specialized teaching procedures. In this work, we explore protocol programs, an 
+agent-agnostic schema for Human-in-the-Loop Reinforcement Learning. Our goal is 
+to incorporate the beneficial properties of a human teacher into Reinforcement 
+Learning without making strong assumptions about the inner workings of the 
+agent. We show how to represent existing approaches such as action pruning, 
+reward shaping, and training in simulation as special cases of our schema and 
+conduct preliminary experiments on simple domains.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;near-optimal-behavior-via-approximate-state-abstraction&quot;&gt;Near Optimal Behavior via Approximate State Abstraction&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;David Abel, D. Ellis Hershkowitz, Michael L. Littman&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The combinatorial explosion that plagues planning and reinforcement learning 
+(RL) algorithms can be moderated using state abstraction. Prohibitively large 
+task representations can be condensed such that essential information is 
+preserved, and consequently, solutions are tractably computable. However, exact 
+abstractions, which treat only fully-identical situations as equivalent, fail 
+to present opportunities for abstraction in environments where no two 
+situations are exactly alike. In this work, we investigate approximate state 
+abstractions, which treat nearly-identical situations as equivalent. We present 
+theoretical guarantees of the quality of behaviors derived from four types of 
+approximate abstractions. Additionally, we empirically demonstrate that 
+approximate abstractions lead to reduction in task complexity and bounded loss 
+of optimality of behavior in a variety of environments.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;vulnerability-of-deep-reinforcement-learning-to-policy-induction-attacks&quot;&gt;Vulnerability of Deep Reinforcement Learning to Policy Induction Attacks&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Vahid Behzadan and Arslan Munir&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Deep learning classifiers are known to be inherently vulnerable to 
+manipulation by intentionally perturbed inputs, named adversarial examples. In 
+this work, we establish that reinforcement learning techniques based on Deep 
+Q-Networks (DQNs) are also vulnerable to adversarial input perturbations, and 
+verify the transferability of adversarial examples across different DQN models. 
+Furthermore, we present a novel class of attacks based on this vulnerability 
+that enable policy manipulation and induction in the learning process of DQNs. 
+We propose an attack mechanism that exploits the transferability of adversarial 
+examples to implement policy induction attacks on DQNs, and demonstrate its 
+efficacy and impact through experimental study of a game-learning scenario.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;a-threshold-based-scheme-for-reinforcement-learning-in-neural-networks&quot;&gt;A Threshold-based Scheme for Reinforcement Learning in Neural Networks&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Thomas H. Ward&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A generic and scalable Reinforcement Learning scheme for Artificial Neural Networks is presented, providing a general purpose learning machine. By reference to a node threshold three features are described 1) A mechanism for Primary Reinforcement, capable of solving linearly inseparable problems 2) The learning scheme is extended to include a mechanism for Conditioned Reinforcement, capable of forming long term strategy 3) The learning scheme is modified to use a threshold-based deep learning algorithm, providing a robust and biologically inspired alternative to backpropagation. The model may be used for supervised as well as unsupervised training regimes.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;building-machines-that-learn-and-think-like-people&quot;&gt;Building Machines That Learn and Think Like People&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Brenden M. Lake, Tomer D. Ullman, Joshua B. Tenenbaum, Samuel J. Gershman&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Recent progress in artificial intelligence (AI) has renewed interest in building systems that learn and think like people. Many advances have come from using deep neural networks trained end-to-end in tasks such as object recognition, video games, and board games, achieving performance that equals or even beats humans in some respects. Despite their biological inspiration and performance achievements, these systems differ from human intelligence in crucial ways. We review progress in cognitive science suggesting that truly human-like learning and thinking machines will have to reach beyond current engineering trends in both what they learn, and how they learn it. Specifically, we argue that these machines should (a) build causal models of the world that support explanation and understanding, rather than merely solving pattern recognition problems; (b) ground learning in intuitive theories of physics and psychology, to support and enrich the knowledge that is learned; and (c) harness compositionality and learning-to-learn to rapidly acquire and generalize knowledge to new tasks and situations. We suggest concrete challenges and promising routes towards these goals that can combine the strengths of recent neural network advances with more structured cognitive models.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;the-predictron-end-to-end-learning-and-planning&quot;&gt;The Predictron: End-To-End Learning and Planning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;David Silver, Hado van Hasselt, Matteo Hessel, Tom Schaul, Arthur Guez, Tim Harley, Gabriel Dulac-Arnold, David Reichert, Neil Rabinowitz, Andre Barreto, Thomas Degris&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the key challenges of artificial intelligence is to learn models that are effective in the context of planning. In this document we introduce the predictron architecture. The predictron consists of a fully abstract model, represented by a Markov reward process, that can be rolled forward multiple “imagined” planning steps. Each forward pass of the predictron accumulates internal rewards and values over multiple planning depths. The predictron is trained end-to-end so as to make these accumulated values accurately approximate the true value function. We applied the predictron to procedurally generated random mazes and a simulator for the game of pool. The predictron yielded significantly more accurate predictions than conventional deep neural network architectures.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;learning-what-to-look-in-chest-x-rays-with-a-recurrent-visual-attention-model&quot;&gt;Learning what to look in chest X-rays with a recurrent visual attention model&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Petros-Pavlos Ypsilantis and Giovanni Montana&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;X-rays are commonly performed imaging tests that use small amounts of 
+radiation to produce pictures of the organs, tissues, and bones of the body. 
+X-rays of the chest are used to detect abnormalities or diseases of the 
+airways, blood vessels, bones, heart, and lungs. In this work we present a 
+stochastic attention-based model that is capable of learning what regions 
+within a chest X-ray scan should be visually explored in order to conclude that 
+the scan contains a specific radiological abnormality. The proposed model is a 
+recurrent neural network (RNN) that learns to sequentially sample the entire 
+X-ray and focus only on informative areas that are likely to contain the 
+relevant information. We report on experiments carried out with more than 
+100,000 X-rays containing enlarged hearts or medical devices. The model has 
+been trained using reinforcement learning methods to learn task-specific 
+policies.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;learning-to-reinforcement-learn&quot;&gt;Learning to reinforcement learn&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Jane X Wang, Zeb Kurth-Nelson, Dhruva Tirumala, Hubert Soyer, Joel Z Leibo, Remi Munos,Charles Blundell, Dharshan Kumaran, Matt Botvinick&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In recent years deep reinforcement learning (RL) systems have attained superhuman performance in a number of challenging task domains. However, a major limitation of such applications is their demand for massive amounts of training data. A critical present objective is thus to develop deep RL methods that can adapt rapidly to new tasks. In the present work we introduce a novel approach to this challenge, which we refer to as deep meta-reinforcement learning. Previous work has shown that recurrent networks can support meta-learning in a fully supervised context. We extend this approach to the RL setting. What emerges is a system that is trained using one RL algorithm, but whose recurrent dynamics implement a second, quite separate RL procedure. This second, learned RL algorithm can differ from the original one in arbitrary ways. Importantly, because it is learned, it is configured to exploit structure in the training domain. We unpack these points in a series of seven proof-of-concept experiments, each of which examines a key aspect of deep meta-RL. We consider prospects for extending and scaling up the approach, and also point out some potentially important implications for neuroscience.&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">On The Construction of Extreme Learning Machine for Online and Offline One-Class Classification - An Expanded Toolbox Chandan Gautam, Aruna Tiwari and Qian Leng One-Class Classification (OCC) has been prime concern for researchers and effectively employed in various disciplines.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/weekly201702-1.jpg" /></entry><entry><title type="html">Awesome Papers: 2017-01-4</title><link href="http://localhost:4000/weekly/2017/02/06/weekly201701-4.html" rel="alternate" type="text/html" title="Awesome Papers: 2017-01-4" /><published>2017-02-06T00:00:00+08:00</published><updated>2017-02-06T00:00:00+08:00</updated><id>http://localhost:4000/weekly/2017/02/06/weekly201701-4</id><content type="html" xml:base="http://localhost:4000/weekly/2017/02/06/weekly201701-4.html">&lt;h3 id=&quot;a-k-fold-method-for-baseline-estimation-in-policy-gradient-algorithms&quot;&gt;A K-fold Method for Baseline Estimation in Policy Gradient Algorithms&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Nithyanand Kota, Abhishek Mishra, Sunil Srinivasa, Xi (Peter) Chen, Pieter Abbeel&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The high variance issue in unbiased policy-gradient methods such as VPG and REINFORCE is typically mitigated by adding a baseline. However, the baseline fitting itself suffers from the underfitting or the overfitting problem. In this paper, we develop a K-fold method for baseline estimation in policy gradient algorithms.&lt;!--excerpt--&gt;The parameter K is the baseline estimation hyperparameter that can adjust the bias-variance trade-off in the baseline estimates. We demonstrate the usefulness of our approach via two state-of-the-art policy gradient algorithms on three MuJoCo locomotive control tasks.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;stochastic-planning-and-lifted-inference&quot;&gt;Stochastic Planning and Lifted Inference&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Roni Khardon and Scott Sanner&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Lifted probabilistic inference (Poole, 2003) and symbolic dynamic programming for lifted stochastic planning (Boutilier et al, 2001) were introduced around the same time as algorithmic efforts to use abstraction in stochastic systems.Over the years, these ideas evolved into two distinct lines of research, each supported by a rich literature. Lifted probabilistic inference focused on 
+efficient arithmetic operations on template-based graphical models under a finite domain assumption while symbolic dynamic programming focused on supporting sequential decision-making in rich quantified logical action models and on open domain reasoning. Given their common motivation but different focal points, both lines of research have yielded highly complementary innovations. 
+In this chapter, we aim to help close the gap between these two research areas by providing an overview of lifted stochastic planning from the perspective of 
+probabilistic inference, showing strong connections to other chapters in this book. This also allows us to define Generalized Lifted Inference as a paradigm that unifies these areas and elucidates open problems for future research that can benefit both lifted inference and stochastic planning.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;generating-focussed-molecule-libraries-for-drug-discovery-with-recurrent-neural-networks&quot;&gt;Generating Focussed Molecule Libraries for Drug Discovery with Recurrent Neural Networks&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Marwin H.S. Segler, Thierry Kogej, Christian Tyrchan, Mark P. Waller&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In de novo drug design, computational strategies are used to generate novel molecules with good affinity to the desired biological target. In this work, we show that recurrent neural networks can be trained as generative models for molecular structures, similar to statistical language models in natural language processing. We demonstrate that the properties of the generated molecules correlate very well with the properties of the molecules used to train the model. In order to enrich libraries with molecules active towards a given biological target, we propose to fine-tune the model with small sets of molecules, which are known to be active against that target.Against Staphylococcus aureus, the model reproduced 14% of 6051 hold-out test molecules that medicinal chemists designed, whereas against Plasmodium falciparum (Malaria) it reproduced 28% of 1240 test molecules. When coupled with a scoring function, our model can perform the complete de novo drug design cycle to generate large sets of novel molecules for drug discovery.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;deep-convolutional-neural-networks-for-pairwise-causality&quot;&gt;Deep Convolutional Neural Networks for Pairwise Causality&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Karamjit Singh, Garima Gupta, Lovekesh Vig, Gautam Shroff, and Puneet Agarwal&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Discovering causal models from observational and interventional data is an important first step preceding what-if analysis or counterfactual reasoning. As has been shown before, the direction of pairwise causal relations can, under certain conditions, be inferred from observational data via standard gradient-boosted classifiers (GBC) using carefully engineered statistical 
+features. In this paper we apply deep convolutional neural networks (CNNs) to this problem by plotting attribute pairs as 2-D scatter plots that are fed to the CNN as images. We evaluate our approach on the ‘Cause- Effect Pairs’ NIPS 2013 Data Challenge. We observe that a weighted ensemble of CNN with the earlier GBC approach yields significant improvement. Further, we observe that 
+when less training data is available, our approach performs better than the GBC based approach suggesting that CNN models pre-trained to determine the direction of pairwise causal direction could have wider applicability in causal discovery and enabling what-if or counterfactual analysis.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;akid-a-library-for-neural-network-research-and-production-from-a-dataism-approach&quot;&gt;Akid: A Library for Neural Network Research and Production from a Dataism Approach&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Shuai Li&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Neural networks are a revolutionary but immature technique that is fast evolving and heavily relies on data. To benefit from the newest development and newly available data, we want the gap between research and production as small as possibly. On the other hand, differing from traditional machine learning models, neural network is not just yet another statistic model, but a model for the natural processing engine — the brain. In this work, we describe a neural network library named {\texttt akid}. It provides higher level of abstraction for entities (abstracted as blocks) in nature upon the abstraction done on signals (abstracted as tensors) by Tensorflow, characterizing the dataism observation that all entities in nature processes input and emit out in some ways. It includes a full stack of software that provides abstraction to let researchers focus on research instead of implementation, while at the same time the developed program can also be put into production seamlessly in a 
+distributed environment, and be production ready. At the top application stack, it provides out-of-box tools for neural network applications. Lower down, akid provides a programming paradigm that lets user easily build customized models. The distributed computing stack handles the concurrency and communication, thus letting models be trained or deployed to a single GPU, multiple GPUs, or a 
+distributed environment without affecting how a model is specified in the programming paradigm stack. Lastly, the distributed deployment stack handles how the distributed computing is deployed, thus decoupling the research 
+prototype environment with the actual production environment, and is able to dynamically allocate computing resources, so development (Devs) and operations (Ops) could be separated.&lt;/p&gt;
+
+&lt;p&gt;链接：&lt;a href=&quot;http://akid.readthedocs.io/en/latest/&quot;&gt;http://akid.readthedocs.io/en/latest/&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;deep-recurrent-q-learning-for-partially-observable-mdps&quot;&gt;Deep Recurrent Q-Learning for Partially Observable MDPs&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Matthew Hausknecht, Peter Stone&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Deep Reinforcement Learning has yielded proficient controllers for complex tasks. However, these controllers have limited memory and rely on being able to perceive the complete game screen at each decision point. To address these shortcomings, this article investigates the effects of adding recurrency to a Deep Q-Network (DQN) by replacing the first post-convolutional fully-connected layer with a recurrent LSTM. The resulting \textit{Deep Recurrent Q-Network} (DRQN), although capable of seeing only a single frame at each timestep, successfully integrates information through time and replicates DQN’s performance on standard Atari games and partially observed equivalents featuring flickering game screens. Additionally, when trained with partial observations and evaluated with incrementally more complete observations, DRQN’s performance scales as a function of observability. Conversely, when trained with full observations and evaluated with partial observations, DRQN’s performance degrades less than DQN’s. Thus, given the same length of history, recurrency is a viable alternative to stacking a history of frames in the DQN’s input layer and while recurrency confers no systematic advantage when learning to play the game, the recurrent net can better adapt at evaluation time if the quality of observations changes.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;tuning-recurrent-neural-networks-with-reinforcement-learning&quot;&gt;Tuning Recurrent Neural Networks with Reinforcement Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Natasha Jaques, Shixiang Gu, Richard E. Turner, Douglas Eck&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The approach of training sequence models using supervised learning and next-step prediction suffers from known failure modes. For example, it is notoriously difficult to ensure multi-step generated sequences have coherent global structure. We propose a novel sequence-learning approach in which we use a pre-trained Recurrent Neural Network (RNN) to supply part of the reward value in a Reinforcement Learning (RL) model. Thus, we can refine a sequence predictor by optimizing for some imposed reward functions, while maintaining good predictive properties learned from data. We propose efficient ways to solve this by augmenting deep Q-learning with a cross-entropy reward and deriving novel off-policy methods for RNNs from KL control. We explore the usefulness of our approach in the context of music generation. An LSTM is trained on a large corpus of songs to predict the next note in a musical sequence. This Note RNN is then refined using our method and rules of music theory. We show that by combining maximum likelihood (ML) and RL in this way, we can not only produce more pleasing melodies, but significantly reduce unwanted behaviors and failure modes of the RNN, while maintaining information learned from data.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning&quot;&gt;Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Haoran Tang, Rein Houthooft, Davis Foote, Adam Stooke, Xi Chen, Yan Duan, John Schulman, Filip De Turck, Pieter Abbeel&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Count-based exploration algorithms are known to perform near-optimally when used in conjunction with tabular reinforcement learning (RL) methods for solving small discrete Markov decision processes (MDPs). It is generally thought that count-based methods cannot be applied in high-dimensional state spaces, since most states will only occur once. Recent deep RL exploration strategies are able to deal with high-dimensional continuous state spaces through complex heuristics, often relying on optimism in the face of uncertainty or intrinsic motivation. In this work, we describe a surprising finding: a simple generalization of the classic count-based approach can reach near state-of-the-art performance on various high-dimensional and/or continuous deep RL benchmarks. States are mapped to hash codes, which allows to count their occurrences with a hash table. These counts are then used to compute a reward bonus according to the classic count-based exploration theory. We find that simple hash functions can achieve surprisingly good results on many challenging tasks. Furthermore, we show that a domain-dependent learned hash code may further improve these results. Detailed analysis reveals important aspects of a good hash function: 1) having appropriate granularity and 2) encoding information relevant to solving the MDP. This exploration strategy achieves near state-of-the-art performance on both continuous control tasks and Atari 2600 games, hence providing a simple yet powerful baseline for solving MDPs that require considerable exploration.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;deep-convolutional-neural-networks-for-pairwise-causality-1&quot;&gt;Deep Convolutional Neural Networks for Pairwise Causality&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Karamjit Singh, Garima Gupta, Lovekesh Vig, Gautam Shroff, Puneet Agarwal&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Discovering causal models from observational and interventional data is an important first step preceding what-if analysis or counterfactual reasoning. As has been shown before, the direction of pairwise causal relations can, under certain conditions, be inferred from observational data via standard gradient-boosted classifiers (GBC) using carefully engineered statistical features. In this paper we apply deep convolutional neural networks (CNNs) to this problem by plotting attribute pairs as 2-D scatter plots that are fed to the CNN as images. We evaluate our approach on the ‘Cause- Effect Pairs’ NIPS 2013 Data Challenge. We observe that a weighted ensemble of CNN with the earlier GBC approach yields significant improvement. Further, we observe that when less training data is available, our approach performs better than the GBC based approach suggesting that CNN models pre-trained to determine the direction of pairwise causal direction could have wider applicability in causal discovery and enabling what-if or counterfactual analysis.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;deep-learning-for-time-series-analysis&quot;&gt;Deep Learning for Time-Series Analysis&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;John Cristian Borges Gamboa&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In many real-world application, e.g., speech recognition or sleep stage classification, data are captured over the course of time, constituting a Time-Series. Time-Series often contain temporal dependencies that cause two otherwise identical points of time to belong to different classes or predict different behavior. This characteristic generally increases the difficulty of analysing them. Existing techniques often depended on hand-crafted features that were expensive to create and required expert knowledge of the field. With the advent of Deep Learning new models of unsupervised learning of features for Time-series analysis and forecast have been developed. Such new developments are the topic of this paper: a review of the main Deep Learning techniques is presented, and some applications on Time-Series analysis are summaried. The results make it clear that Deep Learning has a lot to contribute to the field.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;online-learning-with-regularized-kernel-for-one-class-classification&quot;&gt;Online Learning with Regularized Kernel for One-class Classification&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Chandan Gautam, Aruna Tiwari, Sundaram Suresh and Kapil Ahuja&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This paper presents an online learning with regularized kernel based one-class extreme learning machine (ELM) classifier and is referred as online RK-OC-ELM. The baseline kernel hyperplane model considers whole data in a 
+single chunk with regularized ELM approach for offline learning in case of one-class classification (OCC). Further, the basic hyper plane model is adapted in an online fashion from stream of training samples in this paper. Two frameworks viz., boundary and reconstruction are presented to detect the target class in online RKOC-ELM. Boundary framework based one-class classifier 
+consists of single node output architecture and classifier endeavors to approximate all data to any real number. However, one-class classifier based on reconstruction framework is an autoencoder architecture, where output nodes are identical to input nodes and classifier endeavor to reconstruct input layer at the output layer. Both these frameworks employ regularized kernel ELM based online learning and consistency based model selection has been employed to select learning algorithm parameters. The performance of online RK-OC-ELM has been evaluated on standard benchmark datasets as well as on artificial datasets and the results are compared with existing state-of-the art one-class classifiers. The results indicate that the online learning one-class classifier is slightly better or same as batch learning based approaches. As, base classifier used for the proposed classifiers are based on the ELM, hence, proposed classifiers would also inherit the benefit of the base classifier i.e. it will perform faster computation compared to traditional autoencoder based one-class classifier.&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">A K-fold Method for Baseline Estimation in Policy Gradient Algorithms Nithyanand Kota, Abhishek Mishra, Sunil Srinivasa, Xi (Peter) Chen, Pieter Abbeel The high variance issue in unbiased policy-gradient methods such as VPG and REINFORCE is typically mitigated by adding a baseline. However, the baseline fitting itself suffers from the underfitting or the overfitting problem. In this paper, we develop a K-fold method for baseline estimation in policy gradient algorithms.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/weekly201701-4.jpg" /></entry><entry><title type="html">Awesome Papers: 2017-01-3</title><link href="http://localhost:4000/weekly/2017/02/06/weekly201701-3.html" rel="alternate" type="text/html" title="Awesome Papers: 2017-01-3" /><published>2017-02-06T00:00:00+08:00</published><updated>2017-02-06T00:00:00+08:00</updated><id>http://localhost:4000/weekly/2017/02/06/weekly201701-3</id><content type="html" xml:base="http://localhost:4000/weekly/2017/02/06/weekly201701-3.html">&lt;h3 id=&quot;online-reinforcement-learning-for-real-time-exploration-in-continuous-state-and-action-markov-decision-processes&quot;&gt;Online Reinforcement Learning for Real-Time Exploration in Continuous State and Action Markov Decision Processes&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Ludovic Hofer, Hugo Gimbert&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This paper presents a new method to learn online policies in continuous state, continuous action, model-free Markov decision processes, with two properties that are crucial for practical applications.&lt;!--excerpt--&gt;First, the policies are implementable with a very low computational cost: once the policy is computed,the action corresponding to a given state is obtained in logarithmic time with respect to the number of samples used. Second, our method is versatile: it does not rely on any a priori knowledge of the structure of optimal policies. We build upon the Fitted Q-iteration algorithm which represents the $Q$-value as the average of several regression trees. Our algorithm, the Fitted Policy Forest algorithm (FPF), computes a regression forest representing the Q-value 
+and transforms it into a single tree representing the policy, while keeping control on the size of the policy using resampling and leaf merging. We introduce an adaptation of Multi-Resolution Exploration (MRE) which is 
+particularly suited to FPF. We assess the performance of FPF on three classical benchmarks for reinforcement learning: the “Inverted Pendulum”, the “Double Integrator” and “Car on the Hill” and show that FPF equals or outperforms other algorithms, although these algorithms rely on the use of particular representations of the policies, especially chosen in order to fit each of the 
+three problems. Finally, we exhibit that the combination of FPF and MRE allows to find nearly optimal solutions in problems where $\epsilon$-greedy approaches would fail.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;deepmind-lab&quot;&gt;DeepMind Lab&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Charles Beattie, Joel Z. Leibo, Denis Teplyashin, Tom Ward, Marcus Wainwright, Heinrich K&quot;uttler, Andrew Lefrancq, Simon Green, V'ictor Vald'es, Amir Sadik, Julian Schrittwieser, Keith Anderson, Sarah York, Max Cant, Adam Cain, Adrian Bolton, Stephen Gaffney, Helen King, Demis Hassabis,Shane Legg and Stig Petersen&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;DeepMind Lab is a first-person 3D game platform designed for research and development of general artificial intelligence and machine learning systems.DeepMind Lab can be used to study how autonomous artificial agents may learn complex tasks in large, partially observed, and visually diverse worlds. DeepMind Lab has a simple and flexible API enabling creative task-designs and novel AI-designs to be explored and quickly iterated upon. It is powered by a fast and widely recognised game engine, and tailored for effective use by the research community.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;multiple-instance-learning-a-survey-of-problem-characteristics-and-applications&quot;&gt;Multiple Instance Learning: A Survey of Problem Characteristics and Applications&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Marc-Andr'e Carbonneau, Veronika Cheplygina, Eric Granger and Ghyslain Gagnon&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Multiple instance learning (MIL) is a form of weakly supervised learning where training instances are arranged in sets, called bags, and a label is provided for the entire bag. This formulation is gaining interest because it naturally fits various problems and allows to leverage weakly labeled data. Consequently, it has been used in diverse application fields such as computer vision and document classification. However, learning from bags raises important challenges that are unique to MIL. This paper provides a comprehensive survey of the characteristics which define and differentiate the types of MIL problems. Until now, these problem characteristics have not been formally identified and described. As a result, the variations in performance of MIL algorithms from one data set to another are difficult to explain. In 
+this paper, MIL problem characteristics are grouped into four broad categories:the composition of the bags, the types of data distribution, the ambiguity of instance labels, and the task to be performed. Methods specialized to address each category are reviewed. Then, the extent to which these characteristics manifest themselves in key MIL application areas are described. Finally,experiments are conducted to compare the performance of 16 state-of-the-art MIL methods on selected problem characteristics. This paper provides insight on how the problem characteristics affect MIL algorithms, recommendations for future benchmarking and promising avenues for research.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;design-and-development-of-bayes-minimax-linear-classification-systems&quot;&gt;Design and Development of Bayes’ Minimax Linear Classification Systems&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Denise M. Reeves&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This paper considers the design and development of Bayes’ minimax, linear classification systems using linear discriminant functions that are Bayes’ equalizer rules. Bayes’ equalizer rules divide two-class feature spaces into decision regions that have equal classification errors. I will formulate the problem of learning unknown linear discriminant functions from data as a locus problem, thereby formulating geometric locus methods within a statistical framework. Solving locus problems involves finding the equation of a curve or surface defined by a given property, and finding the graph or locus of a given equation. I will devise a system of locus equations that determines Bayes’equalizer rules which is based on a variant of the inequality constrained optimization problem for linear kernel support vector machines. Thereby, I will define a class of learning machines which are fundamental building blocks for Bayes’ minimax pattern recognition systems.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;the-predictron-end-to-end-learning-and-planning&quot;&gt;The Predictron: End-To-End Learning and Planning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;David Silver, Hado van Hasselt, Matteo Hessel, Tom Schaul, Arthur Guez, Tim Harley, Gabriel Dulac-Arnold, David Reichert, Neil Rabinowitz, Andre Barreto, Thomas Degris&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the key challenges of artificial intelligence is to learn models that are effective in the context of planning. In this document we introduce the predictron architecture. The predictron consists of a fully abstract model,represented by a Markov reward process, that can be rolled forward multiple “imagined” planning steps. Each forward pass of the predictron accumulates internal rewards and values over multiple planning depths. The predictron is trained end-to-end so as to make these accumulated values accurately approximate the true value function. We applied the predictron to procedurally 
+generated random mazes and a simulator for the game of pool. The predictron yielded significantly more accurate predictions than conventional deep neural network architectures.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;attend-adapt-and-transfer-attentive-deep-architecture-for-adaptive-transfer-from-multiple-source-tasks&quot;&gt;Attend, Adapt and Transfer: Attentive Deep Architecture for Adaptive Transfer from Multiple Source Tasks&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Janarthanan Rajendran, Aravind S. Lakshminarayanan, Mitesh M. Khapra, P Prasanna, Balaraman Ravindran&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Transferring knowledge from prior source tasks in solving a new target task can be useful in several learning applications. The application of transfer poses two serious challenges which have not been adequately addressed. First, the agent should be able to avoid negative transfer, which happens when the transfer hampers or slows down the learning instead of helping it. Second, the agent should be able to selectively transfer, which is the ability to select and transfer from different and multiple source tasks for different parts of the state space of the target task. We propose A2T (Attend, Adapt and Transfer), an attentive deep architecture which adapts and transfers from these source tasks. Our model is generic enough to effect transfer of either policies or value functions. Empirical evaluations on different learning algorithms show that A2T is an effective architecture for transfer by being able to avoid negative transfer while transferring selectively from multiple source tasks in the same domain.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;non-deterministic-policy-improvement-stabilizes-approximated-reinforcement-learning&quot;&gt;Non-Deterministic Policy Improvement Stabilizes Approximated Reinforcement Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Wendelin B&quot;ohmer and Rong Guo and Klaus Obermayer&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This paper investigates a type of instability that is linked to the greedy policy improvement in approximated reinforcement learning. We show empirically that non-deterministic policy improvement can stabilize methods like LSPI by controlling the improvements’ stochasticity. Additionally we show that a suitable representation of the value function also stabilizes the solution to some degree. The presented approach is simple and should also be easily transferable to more sophisticated algorithms like deep reinforcement learning.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;how-to-train-your-deep-neural-network-with-dictionary-learning&quot;&gt;How to Train Your Deep Neural Network with Dictionary Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Vanika Singhal, Shikha Singh and Angshul Majumdar&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Currently there are two predominant ways to train deep neural networks. The first one uses restricted Boltzmann machine (RBM) and the second one autoencoders. RBMs are stacked in layers to form deep belief network (DBN); the 
+final representation layer is attached to the target to complete the deep neural network. Autoencoders are nested one inside the other to form stacked autoencoders; once the stcaked autoencoder is learnt the decoder portion is 
+detached and the target attached to the deepest layer of the encoder to form the deep neural network. This work proposes a new approach to train deep neural networks using dictionary learning as the basic building block; the idea is to use the features from the shallower layer as inputs for training the next deeper layer. One can use any type of dictionary learning (unsupervised,supervised, discriminative etc.) as basic units till the pre-final layer. In the final layer one needs to use the label consistent dictionary learning formulation for classification. We compare our proposed framework with existing state-of-the-art deep learning techniques on benchmark problems; we are always within the top 10 results. In actual problems of age and gender classification,we are better than the best known techniques.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;a-note-on-the-function-approximation-error-bound-for-risk-sensitive--reinforcement-learning&quot;&gt;A note on the function approximation error bound for risk-sensitive  reinforcement learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Prasenjit Karmakar, Shalabh Bhatnagar&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In this paper we improve the existing function approximation error bound for the policy evaluation algorithm when the aim is to find the risk-sensitive cost 
+represented using exponential utility.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;deep-learning-and-its-applications-to-machine-health-monitoring-a-survey&quot;&gt;Deep Learning and Its Applications to Machine Health Monitoring: A Survey&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Rui Zhao, Ruqiang Yan, Zhenghua Chen, Kezhi Mao, Peng Wang and Robert X. Gao&lt;/em&gt; 
+Categories: cs.LG stat.ML&lt;/p&gt;
+
+&lt;p&gt;Since 2006, deep learning (DL) has become a rapidly growing research direction, redefining state-of-the-art performances in a wide range of areas such as object recognition, image segmentation, speech recognition and machine translation. In modern manufacturing systems, data-driven machine health monitoring is gaining in popularity due to the widespread deployment of low-cost sensors and their connection to the Internet. Meanwhile, deep learning provides useful tools for processing and analyzing these big machinery data.The main purpose of this paper is to review and summarize the emerging research work of deep learning on machine health monitoring. After the brief introduction of deep learning techniques, the applications of deep learning in 
+machine health monitoring systems are reviewed mainly from the following aspects: Auto-encoder (AE) and its variants, Restricted Boltzmann Machines and its variants including Deep Belief Network (DBN) and Deep Boltzmann Machines 
+(DBM), Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN).Finally, some new trends of DL-based machine health monitoring methods are discussed.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;adaptive-lambda-least-squares-temporal-difference-learning&quot;&gt;Adaptive Lambda Least-Squares Temporal Difference Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Timothy A. Mann and Hugo Penedones and Shie Mannor and Todd Hester&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Temporal Difference learning or TD(λ) is a fundamental algorithm in the field of reinforcement learning. However, setting TD’s λ parameter, which controls the timescale of TD updates, is generally left up to the practitioner. We formalize the λ selection problem as a bias-variance trade-off where the solution is the value of λ that leads to the smallest Mean Squared Value Error (MSVE). To solve this trade-off we suggest applying Leave-One-Trajectory-Out Cross-Validation (LOTO-CV) to search the space of λ values. Unfortunately, this approach is too computationally expensive for most practical applications. For Least Squares TD (LSTD) we show that LOTO-CV can be implemented efficiently to automatically tune λ and apply function optimization methods to efficiently search the space of λ values. The resulting algorithm, ALLSTD, is parameter free and our experiments demonstrate that ALLSTD is significantly computationally faster than the na&quot;{i}ve LOTO-CV implementation while achieving similar performance.&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">Online Reinforcement Learning for Real-Time Exploration in Continuous State and Action Markov Decision Processes Ludovic Hofer, Hugo Gimbert This paper presents a new method to learn online policies in continuous state, continuous action, model-free Markov decision processes, with two properties that are crucial for practical applications.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/weekly201701-3.jpg" /></entry><entry><title type="html">Awesome Papers: 2017-01-2</title><link href="http://localhost:4000/weekly/2017/02/06/weekly201701-2.html" rel="alternate" type="text/html" title="Awesome Papers: 2017-01-2" /><published>2017-02-06T00:00:00+08:00</published><updated>2017-02-06T00:00:00+08:00</updated><id>http://localhost:4000/weekly/2017/02/06/weekly201701-2</id><content type="html" xml:base="http://localhost:4000/weekly/2017/02/06/weekly201701-2.html">&lt;h3 id=&quot;why-and-when-can-deep--but-not-shallow--networks-avoid-the-curse-of-dimensionality-a-review&quot;&gt;Why and When Can Deep – but Not Shallow – Networks Avoid the Curse of Dimensionality: a Review&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Tomaso Poggio, Hrushikesh Mhaskar, Lorenzo Rosasco, Brando Miranda, Qianli Liao&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The paper reviews and extends an emerging body of theoretical results on deep learning including the conditions under which it can be exponentially better than shallow learning.&lt;!--excerpt--&gt;A class of deep convolutional networks represent an important special case of these conditions, though weight sharing is not the main reason for their exponential advantage. Implications of a few key theorems are discussed, together with new results, open problems and conjectures.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;time-series-classification-from-scratch-with-deep-neural-networks-a-strong-baseline&quot;&gt;Time Series Classification from Scratch with Deep Neural Networks: A Strong Baseline&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Zhiguang Wang, Weizhong Yan, Tim Oates&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We propose a simple but strong baseline for time series classification from scratch with deep neural networks. Our proposed baseline models are pure end-to-end without any heavy preprocessing on the raw data or feature crafting. The FCN achieves premium performance to other state-of-the-art approaches. Our exploration of the very deep neural networks with the ResNet structure achieves competitive performance under the same simple experiment settings. The simple MLP baseline is also comparable to the 1NN-DTW as a previous golden baseline. Our models provides a simple choice for the real world application and a good starting point for the future research. An overall analysis is provided to discuss the generalization of our models, learned features, network structures and the classification semantics.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;memory-lens-how-much-memory-does-an-agent-use&quot;&gt;Memory Lens: How Much Memory Does an Agent Use?&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Christoph Dann, Katja Hofmann, Sebastian Nowozin&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We propose a new method to study the internal memory used by reinforcement learning policies. We estimate the amount of relevant past information by estimating mutual information between behavior histories and the current action of an agent. We perform this estimation in the passive setting, that is, we do not intervene but merely observe the natural behavior of the agent. Moreover,we provide a theoretical justification for our approach by showing that it yields an implementation-independent lower bound on the minimal memory capacity of any agent that implement the observed policy. We demonstrate our approach by estimating the use of memory of DQN policies on concatenated Atari frames,demonstrating sharply different use of memory across 49 games. The study of memory as information that flows from the past to the current action opens avenues to understand and improve successful reinforcement learning algorithms.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;rein-houthooft-xi-chen-yan-duan-john-schulman-filip-de-turck-pieter-abbeel&quot;&gt;Rein Houthooft, Xi Chen, Yan Duan, John Schulman, Filip De Turck, Pieter Abbeel&lt;/h3&gt;
+
+&lt;p&gt;Scalable and effective exploration remains a key challenge in reinforcement learning (RL). While there are methods with optimality guarantees in the setting of discrete state and action spaces, these methods cannot be applied in high-dimensional deep RL scenarios. As such, most contemporary RL relies on simple heuristics such as epsilon-greedy exploration or adding Gaussian noise to the controls. This paper introduces Variational Information Maximizing Exploration (VIME), an exploration strategy based on maximization of information gain about the agent’s belief of environment dynamics. We propose a practical implementation, using variational inference in Bayesian neural networks which efficiently handles continuous state and action spaces. VIME modifies the MDP reward function, and can be applied with several different underlying RL algorithms. We demonstrate that VIME achieves significantly better performance compared to heuristic exploration methods across a variety of continuous control tasks and algorithms, including tasks with very sparse rewards.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;对应代码：&lt;a href=&quot;https://github.com/openai/vime&quot;&gt;https://github.com/openai/vime&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;generative-adversarial-imitation-learning&quot;&gt;Generative Adversarial Imitation Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Jonathan Ho, Stefano Ermon&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Consider learning a policy from example expert behavior, without interaction with the expert or access to reinforcement signal. One approach is to recover the expert’s cost function with inverse reinforcement learning, then extract a policy from that cost function with reinforcement learning. This approach is indirect and can be slow. We propose a new general framework for directly extracting a policy from data, as if it were obtained by reinforcement learning following inverse reinforcement learning. We show that a certain instantiation of our framework draws an analogy between imitation learning and generative adversarial networks, from which we derive a model-free imitation learning algorithm that obtains significant performance gains over existing model-free methods in imitating complex behaviors in large, high-dimensional environments.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;对应代码：&lt;a href=&quot;https://github.com/openai/imitation&quot;&gt;https://github.com/openai/imitation&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;tflearn-tensorflows-high-level-module-for-distributed-machine-learning&quot;&gt;TF.Learn: TensorFlow’s High-level Module for Distributed Machine Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Yuan Tang&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;TF.Learn is a high-level Python module for distributed machine learning inside TensorFlow. It provides an easy-to-use Scikit-learn style interface to simplify the process of creating, configuring, training, evaluating, and experimenting a machine learning model. TF.Learn integrates a wide range of state-of-art machine learning algorithms built on top of TensorFlow’s low level APIs for small to large-scale supervised and unsupervised problems. This module focuses on bringing machine learning to non-specialists using a general-purpose high-level language as well as researchers who want to implement, benchmark,and compare their new methods in a structured environment. Emphasis is put on ease of use, performance,documentation, and API consistency.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;end-to-end-deep-reinforcement-learning-for-lane-keeping-assist&quot;&gt;End-to-End Deep Reinforcement Learning for Lane Keeping Assist&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Ahmad El Sallab, Mohammed Abdou, Etienne Perot and Senthil Yogamani&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Reinforcement learning is considered to be a strong AI paradigm which can be used to teach machines through interaction with the environment and learning from their mistakes, but it has not yet been successfully used for automotive applications. There has recently been a revival of interest in the topic,however, driven by the ability of deep learning algorithms to learn good representations of the environment. Motivated by Google DeepMind’s successful 
+demonstrations of learning for games from Breakout to Go, we will propose different methods for autonomous driving using deep reinforcement learning.This is of particular interest as it is difficult to pose autonomous driving as 
+a supervised learning problem as it has a strong interaction with the environment including other vehicles, pedestrians and roadworks. As this is a relatively new area of research for autonomous driving, we will formulate two main categories of algorithms: 1) Discrete actions category, and 2) Continuous actions category. For the discrete actions category, we will deal with Deep Q-Network Algorithm (DQN) while for the continuous actions category, we will deal with Deep Deterministic Actor Critic Algorithm (DDAC). In addition to that, We will also discover the performance of these two categories on an open source car simulator for Racing called (TORCS) which stands for The Open Racing car Simulator. Our simulation results demonstrate learning of autonomous maneuvering in a scenario of complex road curvatures and simple interaction with other vehicles. Finally, we explain the effect of some restricted conditions, put on the car during the learning phase, on the convergence time for finishing its learning phase.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;neuro-symbolic-representation-learning-on-biological-knowledge-graphs&quot;&gt;Neuro-symbolic representation learning on biological knowledge graphs&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Mona Alshahrani, Mohammed Asif Khan, Omar Maddouri, Akira R Kinjo, N'uria Queralt-Rosinach, Robert Hoehndorf&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Motivation: Biological data and knowledge bases increasingly rely on Semantic Web technologies and the use of knowledge graphs for data integration,retrieval and federated queries. In the past years, feature learning methods that are applicable to graph-structured data are becoming available, but have not yet widely been applied and evaluated on structured biological knowledge.Results: We develop a novel method for feature learning on biological knowledge graphs. Our method combines symbolic methods, in particular knowledge representation using symbolic logic and automated reasoning, with neural networks to generate embeddings of nodes that encode for related information within knowledge graphs. Through the use of symbolic logic, these embeddings contain both explicit and implicit information. We apply these embeddings to the prediction of edges in the knowledge graph representing problems of function prediction, finding candidate genes of diseases, protein-protein 
+interactions, or drug target relations, and demonstrate performance that matches and sometimes outperforms traditional approaches based on manually crafted features. Our method can be applied to any biological knowledge graph,and will thereby open up the increasing amount of Semantic Web based knowledge bases in biology to use in machine learning and data analytics.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;deepcancer-detecting-cancer-through-gene-expressions-via-deep-generative-learnin&quot;&gt;DeepCancer: Detecting Cancer through Gene Expressions via Deep Generative Learnin&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Rajendra Rana Bhat, Vivek Viswanath, Xiaolin Li&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Transcriptional profiling on microarrays to obtain gene expressions has been used to facilitate cancer diagnosis. We propose a deep generative machine learning architecture (called DeepCancer) that learn features from unlabeled 
+microarray data. These models have been used in conjunction with conventional classifiers that perform classification of the tissue samples as either being 
+cancerous or non-cancerous. The proposed model has been tested on two different clinical datasets. The evaluation demonstrates that DeepCancer model achieves a very high precision score, while significantly controlling the false positive and false negative scores.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;reinforcement-learning-with-temporal-logic-rewards&quot;&gt;Reinforcement Learning With Temporal Logic Rewards&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Xiao Li, Cristian-Ioan Vasile and Calin Belta&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The reward function plays a critical role in rein- forcement learning (RL).It is a place where designers specify the desired behavior and impose important 
+constraints for the system. While most reward functions used in the current RL literature have been quite simple for relatively simple tasks, real world applications typically involve tasks that are logically more complex. In this paper we take advantage of the expressive power of temporal logic (TL) to express complex rules the system should follow, or incorporate domain knowledge into learning. We propose a TL that we argue is suitable for robotic task specification in RL. We also present the concept of one-step robustness, and show that the problem of sparse reward that occurs when using TL specification 
+as the reward function can be alleviated while leaving the resultant policy invariant. Simulated manipulation tasks are used to illustrate RL with the proposed TL and the one-step robustness.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;learning-to-drive-using-inverse-reinforcement-learning-and-deep-q-networks&quot;&gt;Learning to Drive using Inverse Reinforcement Learning and Deep Q-Networks&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Sahand Sharifzadeh, Ioannis Chiotellis, Rudolph Triebel, Daniel Cremers&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We propose an inverse reinforcement learning (IRL) approach using Deep Q-Networks to extract the rewards in problems with large state spaces. We evaluate the performance of this approach in a simulation-based autonomous driving scenario. Our results resemble the intuitive relation between the reward function and readings of distance sensors mounted at different poses on 
+the car. We also show that, after a few learning rounds, our simulated agent generates collision-free motions and performs human-like lane change behaviour.&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">Why and When Can Deep – but Not Shallow – Networks Avoid the Curse of Dimensionality: a Review Tomaso Poggio, Hrushikesh Mhaskar, Lorenzo Rosasco, Brando Miranda, Qianli Liao The paper reviews and extends an emerging body of theoretical results on deep learning including the conditions under which it can be exponentially better than shallow learning.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/weekly201701-2.jpg" /></entry><entry><title type="html">Awesome Papers: 2017-01-1</title><link href="http://localhost:4000/weekly/2017/02/06/weekly201701-1.html" rel="alternate" type="text/html" title="Awesome Papers: 2017-01-1" /><published>2017-02-06T00:00:00+08:00</published><updated>2017-02-06T00:00:00+08:00</updated><id>http://localhost:4000/weekly/2017/02/06/weekly201701-1</id><content type="html" xml:base="http://localhost:4000/weekly/2017/02/06/weekly201701-1.html">&lt;h3 id=&quot;icarl-incremental-classifier-and-representation-learning&quot;&gt;iCaRL: Incremental Classifier and Representation Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Sylvestre-Alvise Rebuffi, Alexander Kolesnikov, Christoph H. Lampert&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A major open problem on the road to artificial intelligence is the development of incrementally learning systems that learn about more and more concepts over time from a stream of data.&lt;!--excerpt--&gt;In this work, we introduce a new training strategy, iCaRL, that allows learning in such a class-incremental way: only the training data for a small number of classes has to be present at the same time and new classes can be added progressively. iCaRL learns strong classifiers and a data representation simultaneously. This distinguishes it from earlier works that were fundamentally limited to fixed data representations and therefore incompatible with deep learning architectures. We show by experiments on the CIFAR-100 and ImageNet ILSVRC 2012 datasets that iCaRL can learn many classes incrementally over a long period of time where other strategies quickly fail.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;deep-reinforcement-learning-for-robotic-manipulation-with-asynchronous-off-policy-updates&quot;&gt;Deep Reinforcement Learning for Robotic Manipulation with Asynchronous Off-Policy Updates&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Shixiang Gu, Ethan Holly, Timothy Lillicrap, Sergey Levine&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Reinforcement learning holds the promise of enabling autonomous robots to learn large repertoires of behavioral skills with minimal human intervention. However, robotic applications of reinforcement learning often compromise the autonomy of the learning process in favor of achieving training times that are practical for real physical systems. This typically involves introducing hand-engineered policy representations and human-supplied demonstrations. Deep reinforcement learning alleviates this limitation by training general-purpose neural network policies, but applications of direct deep reinforcement learning algorithms have so far been restricted to simulated settings and relatively simple tasks, due to their apparent high sample complexity. In this paper, we demonstrate that a recent deep reinforcement learning algorithm based on off-policy training of deep Q-functions can scale to complex 3D manipulation tasks and can learn deep neural network policies efficiently enough to train on real physical robots. We demonstrate that the training times can be further reduced by parallelizing the algorithm across multiple robots which pool their policy updates asynchronously. Our experimental evaluation shows that our method can learn a variety of 3D manipulation skills in simulation and a complex door opening skill on real robots without any prior demonstrations or manually designed representations.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;a-deep-learning-approach-for-joint-video-frame-and-reward-prediction-in-atari-games&quot;&gt;A Deep Learning Approach for Joint Video Frame and Reward Prediction in Atari Games&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Felix Leibfried, Nate Kushman, Katja Hofmann&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Reinforcement learning is concerned with learning to interact with environments that are initially unknown. State-of-the-art reinforcement learning approaches, such as DQN, are model-free and learn to act effectively across a wide range of environments such as Atari games, but require huge amounts of data. Model-based techniques are more data-efficient, but need to acquire explicit knowledge about the environment dynamics or the reward 
+structure.In this paper we take a step towards using model-based techniques in environments with high-dimensional visual state space when system dynamics and 
+the reward structure are both unknown and need to be learned, by demonstrating that it is possible to learn both jointly. Empirical evaluation on five Atari games demonstrate accurate cumulative reward prediction of up to 200 frames. We consider these positive results as opening up important directions for model-based RL in complex, initially unknown environments.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;cascaded-neural-networks-with-selective-classifiers-and-its-evaluation-using-lung-x-ray-ct-images&quot;&gt;Cascaded Neural Networks with Selective Classifiers and its evaluation using Lung X-ray CT Images&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Masaharu Sakamoto, Hiroki Nakano&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Lung nodule detection is a class imbalanced problem because nodules are found with much lower frequency than non-nodules. In the class imbalanced problem,conventional classifiers tend to be overwhelmed by the majority class and ignore the minority class. We therefore propose cascaded convolutional neural networks to cope with the class imbalanced problem. In the proposed approach,
+cascaded convolutional neural networks that perform as selective classifiers filter out obvious non-nodules. Successively, a convolutional neural network trained with a balanced data set calculates nodule probabilities. The proposed method achieved the detection sensitivity of 85.3% and 90.7% at 1 and 4 false positives per scan in FROC curve, respectively.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;limbo-a-fast-and-flexible-library-for-bayesian-optimization&quot;&gt;Limbo: A Fast and Flexible Library for Bayesian Optimization&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Antoine Cully, Konstantinos Chatzilygeroudis, Federico Allocati, Jean-Baptiste Mouret&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Limbo is an open-source C++11 library for Bayesian optimization which is designed to be both highly flexible and very fast. It can be used to optimize functions for which the gradient is unknown, evaluations are expensive, and runtime cost matters (e.g., on embedded systems or robots). Benchmarks on standard functions show that Limbo is about 2 times faster than BayesOpt(another C++ library) for a similar accuracy.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;deep-learning-approximation-for-stochastic-control-problems&quot;&gt;Deep Learning Approximation for Stochastic Control Problems&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Jiequn Han, E Weinan&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Many real world stochastic control problems suffer from the “curse of dimensionality”. To overcome this difficulty, we develop a deep learning approach that directly solves high-dimensional stochastic control problems based on Monte-Carlo sampling. We approximate the time-dependent controls as feedforward neural networks and stack these networks together through model dynamics. The objective function for the control problem plays the role of the loss function for the deep neural network. We test this approach using examples from the areas of optimal trading and energy storage. Our results suggest that the algorithm presented here achieves satisfactory accuracy and at the same time, can handle rather high dimensional problems.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;title-variational-intrinsic-control&quot;&gt;Title: Variational Intrinsic Control&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Karol Gregor, Danilo Jimenez Rezende, Daan Wierstra&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In this paper we introduce a new unsupervised reinforcement learning method for discovering the set of intrinsic options available to an agent. This set is learned by maximizing the number of different states an agent can reliably reach, as measured by the mutual information between the set of options and option termination states. To this end, we instantiate two policy gradient based algorithms, one that creates an explicit embedding space of options and one that represents options implicitly. The algorithms also provide an explicit 
+measure of empowerment in a given state that can be used by an empowerment maximizing agent. The algorithm scales well with function approximation and we demonstrate the applicability of the algorithm on a range of tasks.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;can-co-robots-learn-to-teach&quot;&gt;Can Co-robots Learn to Teach?&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Harshal Maske, Emily Kieson, Girish Chowdhary, and Charles Abramson&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We explore beyond existing work on learning from demonstration by asking the question: Can robots learn to teach?, that is, can a robot autonomously learn an instructional policy from expert demonstration and use it to instruct or collaborate with humans in executing complex tasks in uncertain environments? In this paper we pursue a solution to this problem by leveraging the idea that humans often implicitly decompose a higher level task into several subgoals whose execution brings the task closer to completion. We propose Dirichlet process based non-parametric Inverse Reinforcement Learning (DPMIRL) approach for reward based unsupervised clustering of task space into subgoals. This approach is shown to capture the latent subgoals that a human teacher would have utilized to train a novice. The notion of action primitive is introduced as the means to communicate instruction policy to humans in the least complicated manner, and as a computationally efficient tool to segment demonstration data. We evaluate our approach through experiments on hydraulic actuated scaled model of an excavator and evaluate and compare different teaching strategies utilized by the robot.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;the-recycling-gibbs-sampler-for-efficient-learning&quot;&gt;The Recycling Gibbs Sampler for Efficient Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Luca Martino, Victor Elvira, Gustau Camps-Valls&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Monte Carlo methods are essential tools for Bayesian inference. Gibbs sampling is a well-known Markov chain Monte Carlo (MCMC) algorithm, extensively used in signal processing, machine learning, and statistics, employed to draw samples from complicated high-dimensional posterior distributions. The key point for the successful application of the Gibbs sampler is the ability to draw efficiently samples from the full-conditional probability density functions. Since in the general case this is not possible, in order to speed up the convergence of the chain, it is required to generate auxiliary samples whose information is eventually disregarded. In this work, we show that these auxiliary samples can be recycled within the Gibbs estimators, improving their efficiency with no extra cost. This novel scheme arises naturally after 
+pointing out the relationship between the standard Gibbs sampler and the chain rule used for sampling purposes. Numerical simulations involving simple and real inference problems confirm the excellent performance of the proposed 
+scheme in terms of accuracy and computational efficiency. In particular we give empirical evidence of performance in a toy example, inference of Gaussian processes hyperparameters, and learning dependence graphs through regression.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;deep-transfer-learning-for-person-re-identification&quot;&gt;Deep Transfer Learning for Person Re-identification&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Mengyue Geng, Yaowei Wang, Tao Xiang, Yonghong Tian&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Person re-identification (Re-ID) poses a unique challenge to deep learning: how to learn a deep model with millions of parameters on a small training set of few or no labels. In this paper, a number of deep transfer learning models are proposed to address the data sparsity problem. First, a deep network architecture is designed which differs from existing deep Re-ID models in that (a) it is more suitable for transferring representations learned from large image classification datasets, and (b) classification loss and verification loss are combined, each of which adopts a different dropout strategy. Second, a two-stepped fine-tuning strategy is developed to transfer knowledge from auxiliary datasets. Third, given an unlabelled Re-ID dataset, a novel unsupervised deep transfer learning model is developed based on co-training. The proposed models outperform the state-of-the-art deep Re-ID models by large margins: we achieve Rank-1 accuracy of 85.4\%, 83.7\% and 56.3\% on CUHK03, Market1501, and VIPeR respectively, whilst on VIPeR, our unsupervised model (45.1\%) beats most supervised models.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;challenges-in-bayesian-adaptive-data-analysis&quot;&gt;Challenges in Bayesian Adaptive Data Analysis&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Sam Elder&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Traditional statistical analysis requires that the analysis process and data are independent. By contrast, the new field of adaptive data analysis hopes to understand and provide algorithms and accuracy guarantees for research as it is commonly performed in practice, as an iterative process of proposing hypotheses and interacting with the data set. Previous work has established a model with a rather strong lower bound on sample complexity in terms of the number of queries, n∼q√, arguing that adaptive data analysis is much harder than static data analysis, where n∼logq is possible. Instead, we argue that those strong lower bounds point to a shortcoming in the model, an informational asymmetry with no basis in applications. In its place, we propose a new Bayesian version of the problem without this unnecessary asymmetry. The previous lower bounds are no longer valid, which offers the possibility for stronger results. However, we show that a large family of methods, including all previously proposed algorithms, cannot achieve the static dependence of n∼logq even in this regime, establishing polylogarithmic lower bounds with a new family of lower bounds. These preliminary results suggest that adaptive data analysis is harder than static data analysis even without this information asymmetry, but still leave wide open the possibility that new algorithms can be developed to work with fewer samples than the previous best known algorithms.&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">iCaRL: Incremental Classifier and Representation Learning Sylvestre-Alvise Rebuffi, Alexander Kolesnikov, Christoph H. Lampert A major open problem on the road to artificial intelligence is the development of incrementally learning systems that learn about more and more concepts over time from a stream of data.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/weekly201701-1.jpg" /></entry><entry><title type="html">Awesome Papers: 2016-12-4</title><link href="http://localhost:4000/weekly/2017/01/02/weekly201612-4.html" rel="alternate" type="text/html" title="Awesome Papers: 2016-12-4" /><published>2017-01-02T00:00:00+08:00</published><updated>2017-01-02T00:00:00+08:00</updated><id>http://localhost:4000/weekly/2017/01/02/weekly201612-4</id><content type="html" xml:base="http://localhost:4000/weekly/2017/01/02/weekly201612-4.html">&lt;h3 id=&quot;deep-reinforcement-learning-with-averaged-target-dqn&quot;&gt;Deep Reinforcement Learning with Averaged Target DQN&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Oron Anschel, Nir Baram, Nahum Shimkin&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The commonly used Q-learning algorithm combined with function approximation induces systematic overestimations of state-action values. These systematic errors might cause instability, poor performance and sometimes divergence of learning. &lt;!--excerpt--&gt; In this work, we present the Averaged Target DQN (ADQN) algorithm, an adaptation to the DQN class of algorithms which uses a weighted average over past learned networks to reduce generalization noise variance. As a consequence, this leads to reduced overestimations, more stable learning process and improved performance. Additionally, we analyze ADQN variance reduction along trajectories and demonstrate the performance of ADQN on a toy Gridworld problem, as well as on several of the Atari 2600 games from the Arcade Learning Environment.&lt;/p&gt;
+
+&lt;h3 id=&quot;有平均目标dqn的深度强化学习&quot;&gt;有平均目标DQN的深度强化学习&lt;/h3&gt;
+
+&lt;p&gt;通常使用的Q学习算法与函数近似相结合诱导了对状态动作值的系统高估。这些系统性错误可能导致不稳定、性能不佳，有时还会有学习分歧。在这次研究中，我们提出平均目标DQN（ADQN）算法——一个适应DQN类的算法，使用加权平均过去学习的网络，来减少广义噪声方差。结果会导致减少高估、更稳定的学习过程和改进的性能。此外，我们还分析了沿轨迹的ADQN方差减少，并证明ADQN对玩具Gridworld问题的性能，以及来自Arcade学习环境的几个Atari 2600游戏。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;safe-and-efficient-off-policy-reinforcement-learning&quot;&gt;Safe and Efficient Off-Policy Reinforcement Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Rémi Munos, Tom Stepleton, Anna Harutyunyan, Marc G. Bellemare&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In this work, we take a fresh look at some old and new algorithms for off-policy, return-based reinforcement learning. Expressing these in a common form, we derive a novel algorithm, Retrace(λ), with three desired properties: (1) it has low variance; (2) it safely uses samples collected from any behaviour policy, whatever its degree of “off-policyness”; and (3) it is efficient as it makes the best use of samples collected from near on-policy behavior policies. We analyze the contractive nature of the related operator under both off-policy policy evaluation and control settings and derive online sample-based algorithms. We believe this is the first return-based off-policy control algorithm converging a.s. to Q∗ without the GLIE assumption (Greedy in the Limit with Infinite Exploration). As a corollary, we prove the convergence of Watkins’ Q(λ), which was an open problem since 1989. We illustrate the benefits of Retrace(λ) on a standard suite of Atari 2600 games.&lt;/p&gt;
+
+&lt;h3 id=&quot;安全有效的离策略强化学习&quot;&gt;安全有效的离策略强化学习&lt;/h3&gt;
+
+&lt;p&gt;在这次研究中，我们重新考虑了一些旧的和新的算法，用于离策略、基于回报的强化学习。用一个共同的形式表现这些，我们导出一个新的算法，Retrace（λ），它具有三个期望的属性：（1）它具有低方差；（2）它安全地使用从任何行为策略收集的样本，无论其“违规”程度如何；（3）它是高效的，因为它很好地利用从近在策略行为策略收集的样本。我们在离策略策略评估和控制设置下分析相关运算符的收缩性质，并得出基于样本的在线算法。我们认为这是第一个基于回报的离策略控制算法收敛a.s.到Q *，没有GLIE假设（贪婪在无限探索的极限）。作为推论，我们证明了Watkins的Q（λ）的收敛，这是1989年以来的一个开放问题。我们解释了Retrace（λ）对Atari 2600游戏的标准套件的好处。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;learning-to-play-guess-who-and-inventing-a-grounded-language-as-a-consequence&quot;&gt;Learning to Play Guess Who? and Inventing a Grounded Language as a Consequence&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Emilio Jorge, Mikael Kageback, Emil Gustavsson&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Learning your first language is an incredible feat and not easily duplicated. Doing this using nothing but a few pictureless books, a corpus, would likely be impossible even for humans. As an alternative we propose to use situated interactions between agents as a driving force for communication, and the framework of Deep Recurrent Q-Networks (DRQN) for learning a common language grounded in the provided environment. We task the agents with interactive image search in the form of the game Guess Who? The images from the game provide a non trivial environment for the agents to discuss and a natural grounding for the concepts they decide to encode in their communication. Our experiments show that it is possible to learn this task using DRQN and even more importantly that the words the agents use correspond to physical attributes present in the images that make up the agents environment.&lt;/p&gt;
+
+&lt;h3 id=&quot;学会玩猜猜是谁以及发明基础语言作为推论结果&quot;&gt;学会玩猜猜是谁？以及发明基础语言作为推论结果&lt;/h3&gt;
+
+&lt;p&gt;学习你的第一语言是一个不可思议的壮举，不容易复制。只使用一些图片很少的书，一个语料库，甚至对于人类来说都是不可能的。作为替代，我们建议使用代理之间的位置交互作为通信的驱动力，以及用于学习基于所提供环境的共同语言的深度循环Q网络（DRQN）的框架。猜猜我们把交互式图像搜索的代理交给了游戏形式中的谁？来自游戏的图像提供了一个不平凡的环境供代理讨论，以及他们决定在通信中编码的概念的自然基础。我们的实验表明，可以使用DRQN来学习这个任务，甚至更重要的是，代理使用的词对应于组成代理环境的图像中存在的物理属性。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;low-data-drug-discovery-with-one-shot-learning&quot;&gt;Low Data Drug Discovery with One-shot Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Han Altae-Tran, Bharath Ramsundar, Aneesh S. Pappu, and Vijay Pande&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Recent advances in machine learning have made significant contributions to drug discovery. Deep neural networks in particular have been demonstrated to provide significant boosts in predictive power when inferring the properties and activities of small-molecule compounds. However, the applicability of these techniques has been limited by the requirement for large amounts of training data. In this work, we demonstrate how one-shot learning can be used to significantly lower the amounts of data required to make meaningful predictions in drug discovery applications. We introduce a new architecture, the residual LSTM embedding, that, when combined with graph convolutional neural networks, significantly improves the ability to learn meaningful distance metrics over small-molecules. We open source all models introduced in this work as part of DeepChem, an open-source framework for deep-learning in drug discovery.&lt;/p&gt;
+
+&lt;h3 id=&quot;低数据药物发现与一次性学习&quot;&gt;低数据药物发现与一次性学习&lt;/h3&gt;
+
+&lt;p&gt;机器学习的最新进展对药物发现做出了重要贡献。深度神经网络已经被证明在推断小分子化合物的性质和活性时预测能力显着提高。然而，这些技术的适用性受到要求大量训练数据的限制。在这次研究中，我们证明一次性学习可以用于显着降低所需的数据量，使其在药物发现应用中进行有意义的预测。我们引入了一种新的架构——残余LSTM嵌入，当与图表卷积神经网络相结合时，会显着提高学习小分子的有意义距离指标的能力。我们将公开本次研究中介绍的所有模型作为DeepChem的一部分，DeepChem是药物发现深度学习的一种开源框架。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;importance-sampling-with-unequal-support&quot;&gt;Importance Sampling with Unequal Support&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Philip S. Thomas and Emma Brunskill&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Importance sampling is often used in machine learning when training and testing data come from different distributions. In this paper we propose a new variant of importance sampling that can reduce the variance of importance sampling-based estimates by orders of magnitude when the supports of the training and testing distributions differ. After motivating and presenting our new importance sampling estimator, we provide a detailed theoretical analysis that characterizes both its bias and variance relative to the ordinary importance sampling estimator (in various settings, which include cases where ordinary importance sampling is biased, while our new estimator is not, and vice versa). We conclude with an example of how our new importance sampling estimator can be used to improve estimates of how well a new treatment policy for diabetes will work for an individual, using only data from when the individual used a previous treatment policy.&lt;/p&gt;
+
+&lt;h3 id=&quot;不均匀支持的重要性抽样&quot;&gt;不均匀支持的重要性抽样&lt;/h3&gt;
+
+&lt;p&gt;当训练和测试来自不同分布的数据时，重要性抽样通常用于机器学习。在本文中，我们提出了一种重要性抽样的新变量，当训练和测试分布的支持不同时，可以数量级地减少重要性基于抽样估计的方差。在激励和呈现我们新的重要性抽样估计量之后，我们提供详细的理论分析，其特征在于其相对于普通重要性抽样估计量的偏差和方差（在各种设置中，包括普通重要性抽样偏差的情况，而我们的新评估者不是，反之亦然）。我们以一个例子说明我们的新重要性抽样估计量如何用于改善糖尿病的新治疗政策对个体的工作效果的估计，仅使用来自个体使用先前治疗策略的数据。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;sok-applying-machine-learning-in-security---a-survey&quot;&gt;SoK: Applying Machine Learning in Security - A Survey&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Heju Jiang, Jasvir Nagra, Parvez Ahammad&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The idea of applying machine learning(ML) to solve problems in security domains is almost 3 decades old. As information and communications grow more ubiquitous and more data become available, many security risks arise as well as appetite to manage and mitigate such risks. Consequently, research on applying and designing ML algorithms and systems for security has grown fast, ranging from intrusion detection systems(IDS) and malware classification to security policy management(SPM) and information leak checking. In this paper, we systematically study the methods, algorithms, and system designs in academic publications from 2008-2015 that applied ML in security domains. 98 percent of the surveyed papers appeared in the 6 highest-ranked academic security conferences and 1 conference known for pioneering ML applications in security. We examine the generalized system designs, underlying assumptions, measurements, and use cases in active research. Our examinations lead to 1) a taxonomy on ML paradigms and security domains for future exploration and exploitation, and 2) an agenda detailing open and upcoming challenges. Based on our survey, we also suggest a point of view that treats security as a game theory problem instead of a batch-trained ML problem.&lt;/p&gt;
+
+&lt;h3 id=&quot;sok在安全领域中应用机器学习调查&quot;&gt;SoK：在安全领域中应用机器学习—调查&lt;/h3&gt;
+
+&lt;p&gt;应用机器学习（ML）解决安全领域中的问题的想法几乎已经有三十年了。随着信息和通信日益普及，有更多的数据可用，许多安全风险以及管理和减轻这些风险的欲望也在增长。因此，应用设计ML算法和安全系统的研究快速发展，从入侵检测系统（IDS）和恶意软件分类到安全策略管理（SPM）和信息泄漏检查。在本文中，我们系统地研究了2008-2015年在安全领域应用ML学术发表的方法、算法和系统设计。被调查的98％的论文出现在6个最高排名的学术安全会议和1个安全ML先驱应用程序会议中。我们检查了广义系统设计、基础假设、测量和活动研究中的用例。检查有二：1）对未来探索和利用ML范式和安全域的分类系统，2）详细说明开放和即将到来的挑战的议程。根据我们的调查，我们还提供了一个观点，把安全视为一个游戏理论问题，而不是批训练的ML问题。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;multi-task-multiple-kernel-relationship-learning&quot;&gt;Multi-Task Multiple Kernel Relationship Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Keerthiram Murugesan, Jaime Carbonell&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This paper presents a novel multitask multiple-kernel learning framework that efficiently learns the kernel weights leveraging the relationship across multiple tasks. The idea is to automatically infer this task relationship in the \textit{RKHS} space corresponding to the given base kernels. The problem is formulated as a regularization-based approach called \textit{Multi-Task Multiple Kernel Relationship Learning} (\textit{MK-MTRL}), which models the task relationship matrix from the weights learned from latent feature spaces of task-specific base kernels. Unlike in previous work, the proposed formulation allows one to incorporate prior knowledge for simultaneously learning several related task. We propose an alternating minimization algorithm to learn the model parameters, kernel weights and task relationship matrix. In order to tackle large-scale problems, we further propose a two-stage \textit{MK-MTRL} online learning algorithm and show that it significantly reduces the computational time, and also achieves performance comparable to that of the joint learning framework. Experimental results on benchmark datasets show that the proposed formulations outperform several state-of-the-art multi-task learning methods. 
+https://arxiv.org/abs/1611.03427&lt;/p&gt;
+
+&lt;h3 id=&quot;多任务多内核关系学习&quot;&gt;多任务多内核关系学习&lt;/h3&gt;
+
+&lt;p&gt;本文提出一个新的多任务多内核学习框架，利用跨多个任务的关系有效地学习内核权重。这个想法是在与给定基本内核对应的\ textit {RKHS}空间中自动推断任务关系。该问题被表示为\ textit {多任务多核关系学习}（\ textit {MK-MTRL}）的基于正则化的方法，它从特定任务基本内核的潜在特征空间学习的权重来建模任务关系矩阵。与以前的工作不同，这次提出的构想允许它吸收先验知识的同时学习几个相关的任务。我们提出一个交替最小化算法来学习模型参数、内核权重和任务关系矩阵。为了解决大规模的问题，我们进一步提出了一个两段式\ textit {MK-MTRL}在线学习算法，结果显示它显着减少了计算时间，并且达到了与联合学习框架相媲美的性能。基准数据集的实验结果表明，提出的构想优于几个当前最先进的多任务学习方法。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;improving-information-extraction-by-acquiring-external-evidence-with-reinforcement-learning&quot;&gt;Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Karthik Narasimhan, Adam Yala, Regina Barzilay&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Most successful information extraction systems operate with access to a large collection of documents. In this work, we explore the task of acquiring and incorporating external evidence to improve extraction accuracy in domains where the amount of training data is scarce. This process entails issuing search queries, extraction from new sources and reconciliation of extracted values, which are repeated until sufficient evidence is collected. We approach the problem using a reinforcement learning framework where our model learns to select optimal actions based on contextual information. We employ a deep Q-network, trained to optimize a reward function that reflects extraction accuracy while penalizing extra effort. Our experiments on two databases – of shooting incidents, and food adulteration cases – demonstrate that our system significantly outperforms traditional extractors and a competitive meta-classifier baseline.&lt;/p&gt;
+
+&lt;h3 id=&quot;通过强化学习获得的外部证据改善信息提取&quot;&gt;通过强化学习获得的外部证据改善信息提取&lt;/h3&gt;
+
+&lt;p&gt;最成功的信息提取系统能够访问大量的文档集合。在这次研究中，我们探讨了获取和包含外部证据的任务，以提高在训练数据很少的情况下的提取准确率。该过程需要发布搜索查询，从新源和提取值中不断重复萃取，直到收集到足够的证据。我们使用强化学习框架来处理问题，其中我们的模型能基于上下文信息来学习选择最佳动作。我们采用深度Q网络，训练它来优化奖励函数以反映提取精确度，同时减少额外的工作。我们在两个数据库（射击事件和食物掺假案例）上的实验表明，我们的系统显着优于传统提取器和竞争性元分类器基线。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;reinforcement-learning-with-unsupervised-auxiliary-tasks&quot;&gt;Reinforcement Learning with Unsupervised Auxiliary Tasks&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Max Jaderberg, Volodymyr Mnih, Wojciech Marian Czarnecki, Tom Schaul, Joel Z Leibo, David Silver, Koray Kavukcuoglu&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Deep reinforcement learning agents have achieved state-of-the-art results by directly maximising cumulative reward. However, environments contain a much wider variety of possible training signals. In this paper, we introduce an agent that also maximises many other pseudo-reward functions simultaneously by reinforcement learning. All of these tasks share a common representation that, like unsupervised learning, continues to develop in the absence of extrinsic rewards. We also introduce a novel mechanism for focusing this representation upon extrinsic rewards, so that learning can rapidly adapt to the most relevant aspects of the actual task. Our agent significantly outperforms the previous state-of-the-art on Atari, averaging 880\% expert human performance, and a challenging suite of first-person, three-dimensional \emph{Labyrinth} tasks leading to a mean speedup in learning of 10× and averaging 87\% expert human performance on Labyrinth.&lt;/p&gt;
+
+&lt;h3 id=&quot;使用无监督辅助任务的强化学习&quot;&gt;使用无监督辅助任务的强化学习&lt;/h3&gt;
+
+&lt;p&gt;深度强化学习代理通过直接最大化累积奖励达到了最先进的结果。然而，环境包含更多种可能的训练信号。在本文中，我们介绍了一个代理，它在强化学习的同时最大化了许多其他伪奖励函数。所有这些任务都共享一个共同的表征，像无监督学习，继续在没有外在奖励下发展。我们还引入了一个新的机制，将这种表征集中在外在奖励上，使学习能够迅速适应实际任务中最有相关性的方面。我们的代理明显优于Atari先前的最先进的技术，平均880％的专家性能和一个具有挑战性的第一人称，三维迷宫的任务导致平均10×的学习加速和平均87 \％的专家性能提高。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;towards-deep-symbolic-reinforcement-learning&quot;&gt;Towards Deep Symbolic Reinforcement Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Marta Garnelo, Kai Arulkumaran, Murray Shanahan&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Deep reinforcement learning (DRL) brings the power of deep neural networks to bear on the generic task of trial-and-error learning, and its effectiveness has been convincingly demonstrated on tasks such as Atari video games and the game of Go. However, contemporary DRL systems inherit a number of shortcomings from the current generation of deep learning techniques. For example, they require very large datasets to work effectively, entailing that they are slow to learn even when such datasets are available. Moreover, they lack the ability to reason on an abstract level, which makes it difficult to implement high-level cognitive functions such as transfer learning, analogical reasoning, and hypothesis-based reasoning. Finally, their operation is largely opaque to humans, rendering them unsuitable for domains in which verifiability is important. In this paper, we propose an end-to-end reinforcement learning architecture comprising a neural back end and a symbolic front end with the potential to overcome each of these shortcomings. As proof-of-concept, we present a preliminary implementation of the architecture and apply it to several variants of a simple video game. We show that the resulting system – though just a prototype – learns effectively, and, by acquiring a set of symbolic rules that are easily comprehensible to humans, dramatically outperforms a conventional, fully neural DRL system on a stochastic variant of the game.&lt;/p&gt;
+
+&lt;h3 id=&quot;深入象征性深度强化学习&quot;&gt;深入象征性深度强化学习&lt;/h3&gt;
+
+&lt;p&gt;深度加强学习（DRL）使深度神经网络的力量能承担试错学习的一般任务，并且其有效性已经在Atari视频游戏和Go游戏的任务上有说服力地展示过了。然而，当代DRL系统继承了当前一代深度学习技术的一些缺点。例如，他们需要非常大的数据集才能有效地工作，使得即使这些数据集可用，它们的学习起来也很慢。此外，他们缺乏在抽象层面进行推理的能力，这使其难以实现高级别的认知功能，例如迁移学习、类比推理和基于假设的推理。最后，它们的操作对于人们来说是不透明的，使得它们不适合于可验证性很重要的领域。在本文中，我们提出了一个端到端的强化学习架构，包括神经后端和符号前端，这样就有潜力克服这些缺点。作为概念验证，我们提出了架构的初步实现，并将其应用于几个简单视频游戏的变型上。结果证明得到的系统虽然只是一个原型 – 但它能有效地学习，并且通过获取一组对人类而言通俗易懂的符号规则，在游戏的随机变量上其性能显着优于传统的完全神经DRL系统。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;工具&quot;&gt;工具&lt;/h1&gt;
+
+&lt;h3 id=&quot;格式化和清洗数据的python工具包&quot;&gt;格式化和清洗数据的Python工具包&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Python 社区提供了许多库让数据变得清晰有序——从格式化 DataFrame 到匿名化数据集。&lt;/p&gt;
+
+  &lt;p&gt;链接：&lt;a href=&quot;http://python.jobbole.com/86758/&quot;&gt;格式化和清洗数据的Python工具包&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;视频讲义中文笔记cmu凸优化课程&quot;&gt;(视频+讲义+中文笔记)CMU凸优化课程&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;链接：&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzA4NDEyMzc2Mw==&amp;amp;mid=2649676682&amp;amp;idx=1&amp;amp;sn=5d8a33967350cf0a5043cefef33b32cd&amp;amp;chksm=87f67296b081fb80e691840d798996b0984b37e9f28a4684d0b80b5868ab8768be74c1543cda&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=1112xO1kTEzKnpygcQrtX1N1&amp;amp;pass_ticket=4un3Qa8r90fuXndEIAlE3HOkAzTGQ8KpDcGYcFdQH0t8HZ%2F3dQsszStRNJW9boc%2B#rd&quot;&gt;CMU凸优化课程&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;微软亚洲研究院刘铁岩ai时代机器学习最新技术趋势解读&quot;&gt;微软亚洲研究院刘铁岩：AI时代，机器学习最新技术趋势解读&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;链接：&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzAxMzc2NDAxOQ==&amp;amp;mid=2650360556&amp;amp;idx=2&amp;amp;sn=152b290992ed31cb76e63ca5b2216668&quot;&gt;AI时代，机器学习最新技术趋势解读&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;2016年年度十大python库&quot;&gt;2016年年度十大Python库&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;我们避开了 Django、Flask 等已经成为今天的标准库的已经成功的项目。另外，这个榜单中有的库是 2016 年之前建立的，但它们在今年的受欢迎度出现了暴增或我们认为它们非常好所以可以进入这个榜单。&lt;/p&gt;
+
+  &lt;p&gt;链接：&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;amp;mid=2650721717&amp;amp;idx=2&amp;amp;sn=6a58289f9f65448339a845f88f168088&quot;&gt;2016年年度十大Python库&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;ranksysjava开源推荐系统框架&quot;&gt;RankSys：(Java)开源推荐系统框架&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;RankSys-Java 8 Recommender Systems framework for novelty, diversity and much more&lt;/p&gt;
+
+  &lt;p&gt;链接：&lt;a href=&quot;http://ranksys.org/&quot;&gt;RankSys：(Java)开源推荐系统框架&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;其他&quot;&gt;其他&lt;/h1&gt;
+
+&lt;h3 id=&quot;eai不用太聪明但却很实用&quot;&gt;EAI：不用太聪明，但却很实用&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;目前关于人工智能的讨论，流行的是机器具备意识、机器通过图灵测试和机器理解猫脸概念等话题，这些并不一定有建设性，不能有效解决实际问题。受教式人工智能（EAI）则更强调应用智能，目的是让智能技术为产业服务。&lt;/p&gt;
+
+  &lt;p&gt;链接：&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzA4ODcwOTExMQ==&amp;amp;mid=2655577357&amp;amp;idx=6&amp;amp;sn=bb1b3ffd8e7eb2f2ef5695ea51b86643&amp;amp;chksm=8b9a4795bcedce8398a83a4707e2a5535cf0947352f4e41b505e4355bcf22804985251fb444a&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=01026fqMWTr0W8g9FQ66DmG3&amp;amp;pass_ticket=4un3Qa8r90fuXndEIAlE3HOkAzTGQ8KpDcGYcFdQH0t8HZ%2F3dQsszStRNJW9boc%2B#rd&quot;&gt;EAI：不用太聪明，但却很实用&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;2016年人工智能行业全记录人工智能大事件盘点&quot;&gt;2016年人工智能行业全记录！人工智能大事件盘点&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;本文是我们机器人2025对2016年国内外人工智能行业的回顾，文章选取了15个较为重大的人工智能事件，虽然并不能解决几十年来困扰科学家、心理学家和哲学家们的人工智能问题，但却是人工智能技术发展历程上不可磨灭的印记。&lt;/p&gt;
+
+  &lt;p&gt;链接：&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzA4ODcwOTExMQ==&amp;amp;mid=2655577369&amp;amp;idx=4&amp;amp;sn=a3857e883cce2285d0c7250deb473e55&amp;amp;chksm=8b9a4781bcedce97ef5430fb3df81e6700d6c464a6334d2966cf3c82d43541377078c7c62d97&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0102JaoRwftvcv12bOsBxd74&amp;amp;pass_ticket=4un3Qa8r90fuXndEIAlE3HOkAzTGQ8KpDcGYcFdQH0t8HZ%2F3dQsszStRNJW9boc%2B#rd&quot;&gt;2016年人工智能行业全记录！人工智能大事件盘点&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;学术sdn安全技术研究&quot;&gt;学术：SDN安全技术研究&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;软件定义网络SDN通过分离网络设备的控制面与数据面，向上将应用程序接口提供给应用层，从而构建了开放可编程的网络环境，向下将路由策略下发到路由器，实现网络设备集中管理。&lt;/p&gt;
+
+  &lt;p&gt;链接：&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzA4ODcwOTExMQ==&amp;amp;mid=2655577369&amp;amp;idx=6&amp;amp;sn=e37bd4279ad1ccd0524c4d7646321853&amp;amp;chksm=8b9a4781bcedce97d60a19dac544821595c7633b69aad6c5a63baadb5ad7a880f042a12c2154&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=010265g1Ypp6jCTevpjcOx8n&amp;amp;pass_ticket=4un3Qa8r90fuXndEIAlE3HOkAzTGQ8KpDcGYcFdQH0t8HZ%2F3dQsszStRNJW9boc%2B#rd&quot;&gt;学术：SDN安全技术研究&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;机器学习2016年终知识盘点&quot;&gt;机器学习2016年终知识盘点&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;链接：&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzA4ODcwOTExMQ==&amp;amp;mid=2655577393&amp;amp;idx=8&amp;amp;sn=127196252154625017a98393966bd1d6&amp;amp;chksm=8b9a47a9bcedcebfbbc2ec7bedd3f948538e2178b37e7cbaab9abcffeaab263660c3e32f3c67&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0102fMQqGOb2rff5LVi29s2c&amp;amp;pass_ticket=4un3Qa8r90fuXndEIAlE3HOkAzTGQ8KpDcGYcFdQH0t8HZ%2F3dQsszStRNJW9boc%2B#rd&quot;&gt;机器学习2016年终知识盘点&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">Deep Reinforcement Learning with Averaged Target DQN Oron Anschel, Nir Baram, Nahum Shimkin The commonly used Q-learning algorithm combined with function approximation induces systematic overestimations of state-action values. These systematic errors might cause instability, poor performance and sometimes divergence of learning.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/weekly201612-4.jpg" /></entry></feed>
